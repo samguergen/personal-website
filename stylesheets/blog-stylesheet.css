@@ -3,7 +3,23 @@ main {
 }
 
 main section p {
-  webkit-column-count: 2
-  webkit-column-gap: 20px;
+  column-count: 2
+  column-gap: 20px;
+  column-rule-width: 1px;
+  column-rule-style: solid;
+  column-rule-color: #000;
 
+}
+
+.leftcolumn {
+  display: inline-block;
+  width: 40%;
+  float: left;
+
+}
+
+.rightcolumn {
+  display: inline-block;
+  float: right;
+  width: 40%;
 }
