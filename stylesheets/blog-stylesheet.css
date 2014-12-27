@@ -4,18 +4,20 @@ main h1, h2 {
 
 
 .leftcolumn {
+  text-align: justify;
   display: inline-block;
  margin-right: 30px;
   margin-left: 30px;
-  width: 40%;
+  width: 45%;
   float: left;
 
 }
 
 .rightcolumn {
+  text-align: justify;
   display: inline-block;
   margin-right: 30px;
   margin-left: 30px;
   float: right;
-  width: 40%;
+  width: 45%;
 }
