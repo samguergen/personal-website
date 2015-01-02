@@ -65,7 +65,9 @@ margin: 10px auto;
 display: inline-block;
 height: 300px;
 
-
+#leftmainbody img{
+  border-radius: 2px;
+}
 
 }
 
