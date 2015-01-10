@@ -1,18 +1,19 @@
 #wrapper {
-background-color: #FFFFFC;
 padding: 20px auto;
 color:  #7C5300;
 font-family: Baskerville;
 font-size: large;
-
+background-image: url (/Users/samanthaguergenenov/Desktop/DevBootcamp/samguergen.github.io/beachbg2.png);
+background-attachment: fixed;
 }
 
 
 #header, #mainbody, #footer, #leftmainbody, #rightmainbody {
  border: 3px solid #E6E6CA;
  border-radius: 20px;
-background-color: #FFFFF6;
+/* background-color: #FFFFF6; */
  margin: 20px auto;
+ background-color: transparent;
 
 }
 
@@ -31,13 +32,13 @@ background-color: #FFFFF6;
 tr:first-child td {
   border: 2px solid #7C5300;
   border-radius: 5px;
-  background-color:   #FFFFE6;
+
 }
 
 tr:first-child td:first-child {
   border: none;
   width: 250px;
-  background-color: #FFFFF6;
+
 }
 
 img {

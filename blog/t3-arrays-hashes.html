@@ -1,0 +1,183 @@
+<!doctype html>
+<head>
+<title>Sam's Blog</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="https://samguergen.github.io/stylesheets/blog-stylesheet.css">
+
+</head>
+
+  <body>
+
+<div id="wrapper">
+
+<div id="header">
+
+<table>
+<tr>
+  <td rowspan='3'><a href="https://samguergen.github.io/index.html"><img src="https://samguergen.github.io/websitelogo.png" alt="My Logo"/> </a></td>
+  <td><a href="@">about me</a></td>
+  <td><b><a href="https://samguergen.github.io/blog/blog-home.html">blog</a></b></td>
+  <td><a href="@">CV & tech skills</a></td>
+  <td><a href="@">projects</a></td>
+  <td><a href="@">social media</a></td>
+  <td><a href="@">contact</a></td>
+</tr>
+<tr>
+  <td colspan='6'><b><h1>Sam's Blog</h1></b>
+  </td></tr>
+<tr><td colspan='6'><em><h3>"Aux Blogs, Citoyens!"</h3></em></td>
+</tr>
+</table>
+</div>
+
+
+<div id="mainbody" style="height: 1500px">
+  <div id="leftmainbody">
+<ul><em>Posts</em>
+  <p></p>
+  <li>week1
+    <br><a href="https://samguergen.github.io/blog/t1-git-blog.html">Technical</a>
+    </li>
+  <p> </p>
+    <li>week 2
+      <br><a href="https://samguergen.github.io/blog/t2-css-design.html">Technical</a>
+      <br><a href="https://samguergen.github.io/blog/c1-chefs-kitchen.html">Cultural </a></li>
+      <p> </p>
+    <li>week 3
+      <br><b><a href="https://samguergen.github.io/blog/t3-arrays-hashes.html">Technical</a></b>
+      <br><a href="https://samguergen.github.io/blog/c3-thinking-style.html">Cultural </a></li>
+
+  </div>
+
+<div id="rightmainbody">
+
+<h4><center> week 2</center></h4>
+<h4>
+  01/08/2015
+<p> Ruby, Arrays & Hashes.</p></h4>
+
+<p>This week, I immersed myself in Ruby and built some simple programs using the concepts we learned about control flow, loops, iterators, arrays and hashes. Control flow comes quite naturally for me, since it derives from logic, my favorite class as an undergraduate. The if else statements and while loops form the core of computer programming: a two-fold (or binary) mechanism that gives the computer its intelligence. I call it the core, because most computer programs' foundations are built on binary thinking style, which we can more or less interpret as:
+<br>Either something is this, or something is not.
+<br> Using this pattern as a building block, the program will then understand more complex logic.</p>
+&nbsp
+<p>Arrays</p>
+
+<p>Arrays and hashes allows data to be assembled in an organized way, thematically or not, and boxed into one variable for further use.
+  <br>For example, let's say I were to create a variable for all of my favorite movies, so that later I could create a program that lists one, many or all of them as part of a method for an announcer's speech.
+  <br>Without arrays, I would need to create a variable for each of them, and remember the name of each variable I called to later call them in my method. With an array, I would simply store all of the movies names into one variable, and later, in my method, if I wish to print all of the movie names, I could do so by concatenatening the annoucement string with the array name.</p>
+
+<p>For example:</p>
+&nbsp
+
+<p><p>#I build my array</p>
+
+<b>
+favorites_movies = ["The Matrix", "Avatar", "The Lion King", "The Notebook"]
+</b>
+</p>
+
+&nbsp
+<p><p># I build my announcer method, with a placeholder as parameter</p>
+
+<b>
+def announcer(movies)
+<br>puts "Hi, and thank you for attending the Annual Sam Movie Night!"
+<br>puts "Tonight, we will be presenting: " + movies.join(", ") + "!"
+<br>end
+</b>
+</p>
+&nbsp
+<p>#I call my method, with my favorite_movies array as parameter</p>
+<p>
+<b>
+announcer(favorite_movies)
+
+<br>=>
+<em>
+<br>Hi, and thank you for attending the Annual Sam Movie Night!
+
+<br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King, The Notebook!
+</em></b>
+</p>
+
+&nbsp
+<p>Without arrays, I have to add each movie as an input, which is considerably more tedious:</p>
+
+<p>
+<b>
+announcer("The Matrix, Avatar, The Lion King, The Notebook")
+
+<br>=>
+
+<em>
+<br>Hi, and thank you for attending the Annual Sam Movie Night!
+
+<br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King, The Notebook!
+</em></b></p>
+
+&nbsp
+<p>Alternatively, if I wish to only announce one or a few movies, I can print them out using the array name and their position in the array: </p>
+
+<p><b>
+announcer(favorite_movies[0:2])
+
+<br>=>
+<em>
+<br>Hi, and thank you for attending the Annual Sam Movie Night!
+
+<br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King!
+</em></b> </p>
+
+&nbsp
+<p>Hashes</p>
+
+<p> Similar to an array, a hash stores an amalgam of data into one variable. However, the difference is that instead of having a list of individual data, with a default index, a hash stores a list of key-value pairs.
+<br>Using my previous example, a hash would instead have a value for each movie name, such as my opinion of the movie:</p>
+
+<p>
+<b>
+favorites_movies = ["The Matrix": "deep and intelligent",
+<br>"Avatar": "futurist and dreamy",
+<br>"The Lion King": "childhood classic",
+<br>"The Notebook": "chick flick"]
+</b></p>
+
+&nbsp
+<p>Consequently, I were to call the an element according to its position in the hash, the key-value pair would be returned, not the individual value:</p>
+
+<p><b>
+favorite_movies[1]
+
+<br>=>
+<br><em>Avatar: futurist and dreamy</em></b></p>
+
+&nbsp
+<p>If I were to return the value instead (my opinion of a movie), I would call it by its key, not by its default index. </p>
+
+<p><b>
+favorite_movies["Avatar"]
+
+<br>=>
+<br><em>futurist and dreamy</em></b></p>
+
+&nbsp
+<p>Thus, a key can be considered the index of its associated value.</p>
+
+
+</div>
+</div>
+
+<div id="footer">This website is protected under the <a href="https://samguergen.github.io/LICENSE">MIT license</div>
+
+</div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

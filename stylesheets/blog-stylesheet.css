@@ -1,13 +1,12 @@
 #wrapper {
-background-color: #F5FFFF;
+/*background-color: #F5FFFF;*/
 padding: 20px auto;
 color:  #7C5300;
 font-family: Baskerville;
 font-size: large;
+background-image: url (/Users/samanthaguergenenov/Desktop/DevBootcamp/samguergen.github.io/beachbg.png);
 }
 
-/*#header, #mainbody, #footer, #header, table, #leftmainbody, #leftrightbody
-*/
 
 #header, #mainbody, #footer, #leftmainbody, #rightmainbody {
  border: 3px solid #E6E6CA;
