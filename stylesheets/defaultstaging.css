@@ -3,7 +3,7 @@ padding: 20px auto;
 color:  #7C5300;
 font-family: Baskerville;
 font-size: large;
-background-image: url (/Users/samanthaguergenenov/Desktop/DevBootcamp/samguergen.github.io/beachbg2.png);
+background-image: url ('../beachbg2.png');
 background-attachment: fixed;
 }
 

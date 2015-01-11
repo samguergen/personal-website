@@ -14,9 +14,9 @@
 
 <table>
 <tr>
-  <td rowspan='3'><a href="https://samguergen.github.io/index.html"><img src="https://samguergen.github.io/websitelogo.png" alt="My Logo"/> </a></td>
+  <td rowspan='3'><a href="../index.html"><img src="../websitelogo.png" alt="My Logo"/> </a></td>
   <td><a href="@">about me</a></td>
-  <td><b><a href="https://samguergen.github.io/blog/blog-home.html">blog</a></b></td>
+  <td><b><a href="blog-home.html">blog</a></b></td>
   <td><a href="@">CV & tech skills</a></td>
   <td><a href="@">projects</a></td>
   <td><a href="@">social media</a></td>
@@ -36,16 +36,16 @@
 <ul><em>Posts</em>
   <p></p>
   <li>week1
-    <br><a href="https://samguergen.github.io/blog/t1-git-blog.html">Technical</a>
+    <br><a href="t1-git-blog.html">Technical</a>
     </li>
   <p> </p>
     <li>week 2
-      <br><a href="https://samguergen.github.io/blog/t2-css-design.html">Technical</a>
-      <br><a href="https://samguergen.github.io/blog/c1-chefs-kitchen.html">Cultural </a></li>
+      <br><a href="t2-css-design.html">Technical</a>
+      <br><a href="c1-chefs-kitchen.html">Cultural </a></li>
       <p> </p>
     <li>week 3
-      <br><b><a href="https://samguergen.github.io/blog/t3-arrays-hashes.html">Technical</a></b>
-      <br><a href="https://samguergen.github.io/blog/c3-thinking-style.html">Cultural </a></li>
+      <br><b><a href="t3-arrays-hashes.html">Technical</a></b>
+      <br><a href="c3-thinking-style.html">Cultural </a></li>
 
   </div>
 
@@ -131,22 +131,22 @@ announcer(favorite_movies[0:2])
 &nbsp
 <p>Hashes</p>
 
-<p> Similar to an array, a hash stores an amalgam of data into one variable. However, the difference is that instead of having a list of individual data, with a default index, a hash stores a list of key-value pairs.
-<br>Using my previous example, a hash would instead have a value for each movie name, such as my opinion of the movie:</p>
+<p> Similar to an array, a hash stores a list of data into one variable. However, the difference is that instead of individual data, with a default index, a hash stores a list of key-value pairs.
+<br>Using my previous example, if I were to convert my array into a hash, I would instead place a value for each movie name. For example, my opinion of the movie:</p>
 
 <p>
 <b>
-favorites_movies = ["The Matrix": "deep and intelligent",
+favorites_movies = ["The Matrix": "deep, obscure, and thought-provoking",
 <br>"Avatar": "futurist and dreamy",
 <br>"The Lion King": "childhood classic",
 <br>"The Notebook": "chick flick"]
 </b></p>
 
 &nbsp
-<p>Consequently, I were to call the an element according to its position in the hash, the key-value pair would be returned, not the individual value:</p>
+<p>Consequently, I were to call the an element according to its position in the hash, I would first need to conver the hash into an array, because hashes have no default index. In doing so, the key-value pair would be returned, not the individual value:</p>
 
 <p><b>
-favorite_movies[1]
+favorite_movies.to_a[1]
 
 <br>=>
 <br><em>Avatar: futurist and dreamy</em></b></p>
@@ -155,7 +155,12 @@ favorite_movies[1]
 <p>If I were to return the value instead (my opinion of a movie), I would call it by its key, not by its default index. </p>
 
 <p><b>
-favorite_movies["Avatar"]
+favorite_movies["Avatar"]</p>
+
+<p>(or sorting by index, but specifying amout the values only)
+</p>
+
+<p>favorites_movies.values[1]</p>
 
 <br>=>
 <br><em>futurist and dreamy</em></b></p>
@@ -167,7 +172,7 @@ favorite_movies["Avatar"]
 </div>
 </div>
 
-<div id="footer">This website is protected under the <a href="https://samguergen.github.io/LICENSE">MIT license</div>
+<div id="footer">This website is protected under the <a href="LICENSE">MIT license</div>
 
 </div>
   </body>
