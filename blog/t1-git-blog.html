@@ -4,7 +4,7 @@
 <head>
 <title>Sam's Blog</title>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="https://samguergen.github.io/stylesheets/blog-stylesheet.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 
 </head>
 
@@ -16,9 +16,9 @@
 
 <table>
 <tr>
-  <td rowspan='3'><a href="https://samguergen.github.io/index.html"><img src="https://samguergen.github.io/websitelogo.png" alt="My Logo"/> </a></td>
+  <td rowspan='3'><a href="../index.html"><img src="../websitelogo.png" alt="My Logo"/> </a></td>
   <td><a href="@">about me</a></td>
-  <td><b><a href="https://samguergen.github.io/blog/blog-home.html">blog</a></b></td>
+  <td><b><a href="blog-home.html">blog</a></b></td>
   <td><a href="@">CV & tech skills</a></td>
   <td><a href="@">projects</a></td>
   <td><a href="@">social media</a></td>
@@ -33,15 +33,15 @@
 </div>
 
 
-<div id="mainbody" style="height: 850px">
+<div id="mainbody" style="height: 3500px">
   <div id="leftmainbody">
 <ul><em>Posts</em>
   <p></p>
-  <li>week1
-    <br><b><a href="t1-git-blog.html">Technical</a></b>
+  <li>Phase 0, unit 1
+    <br><b><a href="t1-git-blog.html">Version control, Git and Github</a></b>
     </li>
   <p></p>
-    <li>week 2
+    <li>
       <br><a href="t2-css-design.html">Technical</a>
       <br><a href="c1-chefs-kitchen.html">Cultural </a></li>
 <p> </p>
@@ -50,42 +50,79 @@
       <br><a href="c3-thinking-style.html">Cultural </a></li>
       <li>week 4
       <br><a href="t4-enumerable-methods.html">Technical</a>
-      <br><a href="c4-tech-issues.html">Cultural </a></li>
+      <br><a href="c4-tech-issues.html">Internet & Bias</a></li>
 
   </div>
 
 <div id="rightmainbody">
 
-<h4><center> week 1</center></h4>
+<h4><center> Let's git started!</center></h4>
 <h4>
   12/20/2014
 <p> Version control, Git and Github.</p></h4>
     <p>
-      Version control allows a user to keep track of the edits she makes to a project. This can be useful if, for instance, she realizes she has made an error and wants to go back to an older version of the project to fix this error. It is also useful if she is unsure of when she made certain changes, and wants to view the history of her edits in order to have better control over them. In a way, version control is like a 'saving point management program'.
+      This first week, I learned a lot about version control software such as Git and Github, and became acquainted with manipulating my Desktop (operating files, moving across directories, etc) from the command line. Whoa! The command line is not nearly as esoteric as I thought. It just comes down to learning the basic commands like "ls", "pwd", 'cd', "mv", "mkdir", "touch" & more!
 
-      However, it's important to note that instead of tracking and saving every unit of changes -such as every letter typed, which would make it quite daunting to track anything-  the user chooses when to bundle up - aka commit- her changes in order to save them altogether into this saving point.
+      <p><a href ="http://cli.learncodethehardway.org/book/" > Here</a> is a link to all of the useful commands you can use:</p>
 
-Finally, version control allows more than one user to easily collaborate together on the same project. Pulling edits from the original project to the cloned version she is working on, allows a user to not overlap her edits with those of her coworkers. This can save a considerable amount of time as it avoids their constantly having to communicate to let each other know the changes they are making, and which part of the project they are working on.
+      <p>It makes things so much easier in many ways, and of course, I can look pretending I'm a pro, doing very simple things (like moving folders) that appear hard to the outside eye. </p>
+      <p>Sam becoming Neo... loading 10%....</p>
+<img src="imgs/basicterminal.png"/>
+<img src="imgs/terminaloutput.png"/>
 
-    </p>
+      <p>Aside from the command line, we dug deep into the concepts of version control, git and Github.
+        <br>Version control allows you to keep track of the edits you make  to a project. This can be useful in situations where you realized that you made a few mistakes and want to go back to an older version of your project. In most cases, you can't remember exactly <em>where</em> you made the changes- how practical would it be if you could see the history of all your edits? This would allow you to pinpoint exactly where and when any edits was made, thus you have better control over your project as a whole. This is precisely what "version control" is - it's a software that allows you to have control for tracking the different versions of your project. </p>
 
+      <p>It's important to note that instead of tracking and saving every unit of changes in your projet (such as every letter typed-  making it quite overwheling to track anything), the user chooses <em>when</em> and <em>how</em> to bundle up - aka commit- her edits, in order to save them altogether. In a way, you can think of version control as a 'saving point management program'.</p>
+
+<p>Finally, version control allows more than one user to easily collaborate with you on the same project. Pulling edits from the original project to the one you are working on (the "cloned" version) allows your edits not to overlap with your coworkers' edit. This can save a considerable amount of time as it avoids constant communication to let the others know which part of the project you are working on.</p>
+
+<p><center> _______________________________________</center></p>
     <p>
-        git is the most popular and widely use type of version control. It allows users to keep track of their changes locally, meaning on their own machine, through the command line window. The commands that git uses are very intuitive and easy to remember, and even if we are unsure of how to perform, we can always type 'help' or 'man' in the command line in order to receive complete instructions of the said commands.
+        Git is an example of a version control system. Well, actually, it is <em>the</em> most popular, and widely used version control system. It allows you to track your changes locally (on your own machine), through the command line window. The commands that git uses are very intuitive and easy to remember, such as "git status" to check the status of a project, or "git add ." to add the last edits made to a project. Even if you are unsure about a certain command, you can always type 'help' or 'man' in the command line to receive their complete instructions.
 
-        git also interacts with online platforms such as Github, to download, synchronize, push, or pull content between the user's local files and her remote ones. The remote location of a file can be anything from a Github repository, to an email inbox- and is commonly known as a 'cloud' storage.
+       <p>What makes git so wonderful, is that in additioning to track your changes locally, it allows you to interact with online platforms such as Github (which will talk about in just a second), to download, synchronize, push, or pull content between the user's local files and her remote ones. This means that any changes you make to your file, or anytime you create a 'saving point" locally, you only need to send a command through git for your edits to show online! And that's usually how people will collaborate together on a project. Most often, they don't have access to what is going on in your machine (unless information flows completely openly with members of the same network, but most likely, it won't be the case, even in a professional environment) , so you need some type of online version control system to keep everyone at loop.
+
+        <p>Git calls the online platform it operates on the 'remote location', and you can expect a lot of back and forth between local and remote- pulling updates files to your local machine, pushing your updates to the remote file that everyone has access to, etc.
+
+        Note that a "remote location" of a file can be anything from a Github repository, to an email inbox. It's also known as a 'cloud' storage.
     </p>
-    <p>
+   <p> After saving your changes into your folder, the general flow of Git is:</p>
+   <br><em>#checks status of file</em>
+<br><div class="examplz"> git status</div>
 
-Github is an online platform that allows users to code socially using version control. In a way, it is an online equivalent of git, meaning that it provides storage and version control through the internet, instead of on your machine.
+<br><em>#adds and bundles up your changes to the staging area</em>
+<br><div class="examplz"> git add . </div>
 
-It is useful to use Github to store your code because it allows you to access your code from any machine that has internet. You simply need to log into Github. Github files can also be used locally through git (by downloading, or 'cloning' the files from the terminal using git) but it is important to synchronise all the changes we make.
+<br><em>#officializes and applies your bundled up changes to your local computer. </em>
+<br><div class="examplz">git commit -m "messages briefly describing your changes" </div>
 
-Finally, Github is a great way to improve your code if you are willing to accept inputs and recommendations from others. This is called open source, and by making your project (Github calls it 'repository') public to others, the public can fork a copy of it and improve your code before submitting these changes for you to approve them.
+<br><em>#pushes changes to your remote location</em>
+<br><div class="examplz">git push origin master </div>
+
+<p> Here is how I typically operate Git in the Terminal: </p>
+
+
+  <img src="imgs/gitex.png"/>
+
+
+<p> <a href="http://rogerdudler.github.io/git-guide/"> Here </a> is a simple guide for using Git. Your welcome!</p>
+
+<p><center> _______________________________________</center></p>
+
+<p>Github is an online platform that allows users to code socially using version control. In a way, it is an online equivalent of git, meaning that it provides storage and version control through the internet, instead of your local machine.</p>
+
+<p>It is also useful for storing your code, because it allows you to access it from any machine that has internet. You simply need to log into Github. Github files can also be used locally through git (by downloading, or 'cloning' the files from the terminal using git) but it is important to synchronise all the changes you make. </p>
+
+<p>Finally, Github is a great way to improve your code if you are willing to accept inputs and recommendations from others. This is called open source, and by making your project (Github calls it 'repository') public to others, (or private to a selected few)  others can fork their own clone of your project, and improve your code before submitting them back for your approval.
     </p>
+
+<img src="imgs/github2.png"/>
+
 </div>
 </div>
 
-<div id="footer">This website is protected under the <a href="https://samguergen.github.io/LICENSE">MIT license</div>
+<div id="footer">This website is protected under the <a href="../LICENSE">MIT license</div>
 
 </div>
   </body>

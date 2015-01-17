@@ -13,9 +13,7 @@ background-image: url (/Users/samanthaguergenenov/Desktop/DevBootcamp/samguergen
  border-radius: 20px;
  background-color:  #E0FFFF;
  margin: 20px auto;
-
 }
-
 
 
 #header {
@@ -41,7 +39,7 @@ tr:first-child td:first-child {
 
 }
 
-img {
+#header img {
   width: 200px;
   border-radius: 100px;
   border: 2px solid #E6E6CA;
@@ -80,11 +78,30 @@ height: 300px;
 #rightmainbody img{
   border-radius: 2px;
   border: none;
-
+  margin: 20px;
+  width: 60%;
 }
 
 #footer {
   font-size: small;
   clear: both;
   width: 100%;
+}
+
+.examplz {
+  font-weight: bold;
+  font-size: large;
+  color: #00398E;
+  background-color:#D3E2FF;
+  margin: 10px 40px 10px 40px;
+  padding: 5px;
+}
+
+#leftmainbody img {
+
+  width: 500px;
+  border: 20px;
+ position: relative;
+   margin-left: auto;
+   margin-right: auto;
 }

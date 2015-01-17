@@ -2,7 +2,7 @@
 <head>
 <title>Sam's Blog</title>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="https://samguergen.github.io/stylesheets/blog-stylesheet.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 
 </head>
 
@@ -31,12 +31,12 @@
 </div>
 
 
-<div id="mainbody" style="height: 2500px">
+<div id="mainbody" style="height: 1500px">
   <div id="leftmainbody">
 <ul><em>Posts</em>
   <p></p>
-  <li>week1
-    <br><a href="t1-git-blog.html">Technical</a>
+  <li>Phase 0, unit 1
+    <br><a href="t1-git-blog.html">Version control, Git and Github</a>
     </li>
   <p> </p>
     <li>week 2
@@ -48,7 +48,7 @@
       <br><a href="c3-thinking-style.html">Cultural </a></li>
       <li>week 4
       <br><b><a href="t4-enumerable-methods.html">Technical</a></b>
-      <br><a href="c4-tech-issues.html">Cultural </a></li>
+      <br><a href="c4-tech-issues.html">Internet & Bias</a></li>
 
   </div>
 
@@ -57,16 +57,80 @@
 <h4><center> week 4</center></h4>
 <h4>
   01/14/2015
-<p> </p></h4>
+<p> Enumerables</p></h4>
 
+<p>This week, I learned about enumerable modules. These are quite useful and typical of Ruby, because they allow us to iterate (or loop) through an array or hash, in order to gather or modify every element in an array.</p>
 
+<p>So what makes an enumerable different than a <em>for</em> or <em>while</em> loop?</p>
+
+<p>Enumerables can provide a tailored way of iterating through the array or hash, which is implicit and most often characterized by its name. For example, the .sort method iterates through an array, and in doing so it will sort the elements alphabetically or numerically:</p>
+
+<p><div class="examplz">
+students= ["Sandra","Kevin","Sam",
+"Pat","Catherine","Amandine","Lucia"]</div></p>
+
+<p>#will sort the names alphabetically</p>
+
+<p><div class="examplz">
+students.sort
+<br> =>
+<br><em> ["Amandine", "Catherine", "Kevin", "Lucia", "Pat", "Sam", "Sandra"]</em></div></p>
+
+ <p>This provides a great advantage for Rubyists: it saves them lots of lines of code!
+ <br>Here is why: technically, you could manually define a sort method using only for and if loops:</p>
+
+<p>But, we'll have to admit that using .sort is just much more convenient and easy.
+</p>
+
+&nbsp
+ <p>numerables allow us to write even more complex logic in fewer lines, because we can customize these already-customized loops by our own criteria, that we define inside its associated block.</p>
+
+<p>The general format goes:</p>
+
+<p> array.enumerable{|i| customized criteria involving i} </p>
+
+<p>For example:</p>
+
+<p><div class="examplz">
+students= ["Sandra","Kevin","Sam","Pat","Catherine","Amandine","Lucia"]
+</div></p>
+
+<p>#will sort names by number of characters in name</p>
+
+<p><div class="examplz">
+students.sort_by {|name| name.length}
+<br>=>
+<br><em>["Lucia", "Pat", "Sandra", "Catherine", "Sam", "Amandine", "Kevin"]
+</em></div></p>
+
+&nbsp
+
+<p>The enumerable method that I used most often this week was .map{block}. This method is similar to the standard .each method (what I like to call a 'naked' enumerator, since it has no implicit customization and works the same as a for loop) but instead, produces a new array with the result of calling the block. .Each, on the other hand, evaluates the block and throws away the result afterwards.</p>
+
+<p>Another method I used a lot was group_by{block}, which iterates through an array and groups the element in the way specified by the block. The output returns in hash format, with the grouping category as key, and the elements grouped in that category as values for that key.</p>
+
+<p>For example:</p>
+
+<div class="examplz">
+<p>students= ["Sandra","Kevin","Sam","Pat","Catherine","Amandine","Lucia"] </p>
+
+<p>
+  students.group_by{|name| name.length}
+<br>=>
+ <br><em>{5=>["Kevin", "Lucia"], 6=>["Sandra"], 8=>["Amandine"], 3=>["Sam", "Pat"], 9=>["Catherine"]}</em>
+</p>
+</div>
+
+<p>The hash contains keys, which correspond to the different name lengths, and the values, which correspond to every name with that particular length.</p>
+
+<p>Enumerables seem to be the most complex part of my Ruby learning so far. Everything revolving around looping requires careful logic, but since enumerables are ready-made customized loops, requiring in most cases even more customizing (what you define inside the block) it can be easy to lose track of <em>how</em> you are iterating through you array or hash. Enumerables can be both fun and save you tons of lines of coding, but handle them with care!</p>
 
 
 
 </div>
 </div>
 
-<div id="footer">This website is protected under the <a href="LICENSE">MIT license</div>
+<div id="footer">This website is protected under the <a href="../LICENSE">MIT license</div>
 
 </div>
   </body>

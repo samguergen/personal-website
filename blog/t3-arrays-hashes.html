@@ -2,7 +2,7 @@
 <head>
 <title>Sam's Blog</title>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="https://samguergen.github.io/stylesheets/blog-stylesheet.css">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
 
 </head>
 
@@ -35,8 +35,8 @@
   <div id="leftmainbody">
 <ul><em>Posts</em>
   <p></p>
-  <li>week1
-    <br><a href="t1-git-blog.html">Technical</a>
+  <li>Phase 0, unit 1
+    <br><a href="t1-git-blog.html">Version control, Git and Github</a>
     </li>
   <p> </p>
     <li>week 2
@@ -48,7 +48,7 @@
       <br><a href="c3-thinking-style.html">Cultural </a></li>
       <li>week 4
       <br><a href="t4-enumerable-methods.html">Technical</a>
-      <br><a href="c4-tech-issues.html">Cultural </a></li>
+      <br><a href="c4-tech-issues.html">Internet & Bias</a></li>
 
   </div>
 
@@ -70,66 +70,55 @@
   <br>Without arrays, I would need to create a variable for each of them, and remember the name of each variable I called to later call them in my method. With an array, I would simply store all of the movies names into one variable, and later, in my method, if I wish to print all of the movie names, I could do so by concatenatening the annoucement string with the array name.</p>
 
 <p>For example:</p>
-&nbsp
 
-<p><p>#I build my array</p>
 
-<b>
-favorites_movies = ["The Matrix", "Avatar", "The Lion King", "The Notebook"]
-</b>
-</p>
+<p>#builds my array</p>
 
-&nbsp
-<p><p># I build my announcer method, with a placeholder as parameter</p>
+<p><div class="examplz">
+favorites_movies = ["The Matrix", "Avatar", "The Lion King", "The Notebook"]</div></p>
 
-<b>
+
+<p>#builds my announcer method, with a placeholder as parameter</p>
+
+<p><div class="examplz">
 def announcer(movies)
 <br>puts "Hi, and thank you for attending the Annual Sam Movie Night!"
 <br>puts "Tonight, we will be presenting: " + movies.join(", ") + "!"
 <br>end
-</b>
-</p>
-&nbsp
-<p>#I call my method, with my favorite_movies array as parameter</p>
-<p>
-<b>
-announcer(favorite_movies)
+</div></p>
 
+<p>#calls my method, with my favorite_movies array as parameter</p>
+<p><div class="examplz">
+announcer(favorite_movies)
 <br>=>
-<em>
-<br>Hi, and thank you for attending the Annual Sam Movie Night!
+<em><br>Hi, and thank you for attending the Annual Sam Movie Night!
 
 <br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King, The Notebook!
-</em></b>
+</em></div>
 </p>
 
 &nbsp
 <p>Without arrays, I have to add each movie as an input, which is considerably more tedious:</p>
 
-<p>
-<b>
+<p><div class="examplz">
 announcer("The Matrix, Avatar, The Lion King, The Notebook")
-
 <br>=>
-
 <em>
 <br>Hi, and thank you for attending the Annual Sam Movie Night!
-
 <br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King, The Notebook!
-</em></b></p>
+</em></div></p>
 
 &nbsp
+
 <p>Alternatively, if I wish to only announce one or a few movies, I can print them out using the array name and their position in the array: </p>
 
-<p><b>
+<p><div class="examplz">
 announcer(favorite_movies[0:2])
-
 <br>=>
-<em>
-<br>Hi, and thank you for attending the Annual Sam Movie Night!
+<em><br>Hi, and thank you for attending the Annual Sam Movie Night!
 
 <br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King!
-</em></b> </p>
+</em></div> </p>
 
 &nbsp
 <p>Hashes</p>
@@ -138,44 +127,43 @@ announcer(favorite_movies[0:2])
 <br>Using my previous example, if I were to convert my array into a hash, I would instead place a value for each movie name. For example, my opinion of the movie:</p>
 
 <p>
-<b>
+<div class="examplz">
 favorites_movies = ["The Matrix": "deep, obscure, and thought-provoking",
 <br>"Avatar": "futurist and dreamy",
 <br>"The Lion King": "childhood classic",
 <br>"The Notebook": "chick flick"]
-</b></p>
+</div></p>
 
 &nbsp
+
 <p>Consequently, I were to call the an element according to its position in the hash, I would first need to conver the hash into an array, because hashes have no default index. In doing so, the key-value pair would be returned, not the individual value:</p>
 
-<p><b>
+<p><div class="examplz">
 favorite_movies.to_a[1]
-
 <br>=>
-<br><em>Avatar: futurist and dreamy</em></b></p>
+<br><em>Avatar: futurist and dreamy</em></div></p>
 
-&nbsp
 <p>If I were to return the value instead (my opinion of a movie), I would call it by its key, not by its default index. </p>
 
-<p><b>
+<p><div class="examplz">
 favorite_movies["Avatar"]
+</div>
 
-<br>(or sorting by index, but specifying amout the values only)
+<p>(or sorting by index, but specifying amout the values only)
+</p>
 
-
-<br>favorites_movies.values[1]
-
+<p><div class="examplz">
+favorites_movies.values[1]
 <br>=>
-<br><em>futurist and dreamy</em></b></p>
+<br><em>futurist and dreamy</em></div></p>
 
-&nbsp
 <p>Thus, a key can be considered the index of its associated value.</p>
 
 
 </div>
 </div>
 
-<div id="footer">This website is protected under the <a href="LICENSE">MIT license</div>
+<div id="footer">This website is protected under the <a href="../LICENSE">MIT license</div>
 
 </div>
   </body>
