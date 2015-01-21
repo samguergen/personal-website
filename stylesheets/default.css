@@ -1,18 +1,19 @@
 #wrapper {
-background-color: #FFFFFC;
+/*background-color: #FFFFFC;*/
 padding: 20px auto;
 color:  #7C5300;
 font-family: Baskerville;
 font-size: large;
-/*background-image: url ("../beachbg2.png");*/
-
+background-image: url("../beachbg2.png");
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-position: 0px -50px
 }
 
 
 #header, #mainbody, #footer, #leftmainbody, #rightmainbody {
- border: 3px solid #E6E6CA;
- border-radius: 20px;
-background-color: #FFFFF6;
+/* border: 3px solid #E6E6CA;
+ border-radius: 20px;*/
  margin: 20px auto;
  /* background-image: url ("../beachbg2.png"); */
 }
@@ -61,7 +62,7 @@ border: none;
 margin: 10px auto;
 display: inline-block;
 height: 300px;
- background-image: url ("../beachbg2.png");
+
 }
 
 #rightmainbody {
