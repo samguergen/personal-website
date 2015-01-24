@@ -1,13 +1,13 @@
 #wrapper {
 /*background-color: #FFFFFC;*/
 padding: 20px auto;
-color:  #7C5300;
-font-family: Baskerville;
 font-size: large;
-background-image: url("../beachbg2.png");
+font-family: Architect;
+background-image: url("../futurist-android.png");
 background-repeat: no-repeat;
 background-size: 100% auto;
-background-position: 0px -50px
+background-position: 0px -50px;
+background-attachment: fixed;
 }
 
 
@@ -15,7 +15,6 @@ background-position: 0px -50px
 /* border: 3px solid #E6E6CA;
  border-radius: 20px;*/
  margin: 20px auto;
- /* background-image: url ("../beachbg2.png"); */
 }
 
 
@@ -26,27 +25,44 @@ background-position: 0px -50px
   width: 100%;
 }
 
-#header, table {
-  width: 100%;
+#navigator {
+color: #FFFFFF;
 }
 
-tr:first-child td {
-  border: 2px solid #7C5300;
-  border-radius: 5px;
-  background-color:   #FFFFE6;
+  #navigator ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
 }
 
-tr:first-child td:first-child {
-  border: none;
-  width: 250px;
-  background-color: #FFFFF6;
+#navigator li {
+    float: left;
+    margin-top: 10px;
 }
 
-img {
+#navigator a:link, a:visited {
+    display: block;
+    width: 180px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navigator a:hover, a:active {
+    background-color: black;
+    border-radius: 5px;
+}
+
+
+
+/*img {
   width: 200px;
   border-radius: 100px;
   border: 2px solid #E6E6CA;
-}
+}*/
 
 #mainbody{
 clear: both;
@@ -55,30 +71,28 @@ width: 96%;
 height: 400px;
 }
 
-#leftmainbody {
-  float: left;
-  width: 200px;
-border: none;
-margin: 10px auto;
-display: inline-block;
-height: 300px;
-
-}
-
-#rightmainbody {
+#name {
   float: right;
-  margin: 10px auto;
-  width: 800px;
-  text-align: center;
-  display: inline-block;
-  height: 300px;
-  border: none;
+  margin-top: 260px;
+  font-size: x-large;
+  color: #FFFFFF;
+ /* text-transform: uppercase;*/
+ font-weight: normal;
+ margin-right: 70px;
+
 }
 
 #footer {
   font-size: small;
   clear: both;
   width: 100%;
+}
+
+#social {
+/*  text-align: right;*/
+  margin: 50px;
+  display: inline-block;
+  margin-left: 700px;
 }
 
 .examplz {

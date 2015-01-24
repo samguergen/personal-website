@@ -9,12 +9,9 @@ background-attachment: fixed;
 
 
 #header, #mainbody, #footer, #leftmainbody, #rightmainbody {
- border: 3px solid #E6E6CA;
- border-radius: 20px;
-/* background-color: #FFFFF6; */
+/* border: 3px solid #E6E6CA;
+ border-radius: 20px;*/
  margin: 20px auto;
- background-color: transparent;
-
 }
 
 

@@ -1,0 +1,211 @@
+<!doctype html>
+<head>
+<title>Sam's Blog</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+</head>
+
+  <body>
+
+<div id="wrapper">
+
+<div id="header">
+
+<div id="navigator">
+<ul>
+  <li><a href="../index.html">Home</a></li>
+  <li><a href="../about.html">About me</a></li>
+  <li><a href="blog-home.html">Blog</a></li>
+  <li><a href="../contact.html">Contact</a></li>
+  <li><a href="../cv.html">CV & Technical</a></li>
+  <li><a href="../projects.html">Projects</a></li>
+</ul>
+
+____________________________________________________________
+<br> Sam Guergenenov
+</div>
+</div>
+
+
+<div id="mainbody">
+  <div id="leftmainbody">
+<ul><em> Blog Posts</em></ul>
+  <p></p>
+  <ul>Technical
+    <li><a href="t1-git-blog.html">Version control, Git and Github</a>
+    </li>
+    <li><a href="t2-css-design.html">HTML & CSS</a></li>
+    <li><a href="t3-arrays-hashes.html">Arrays & Hashes</a></li>
+      <li><a href="t4-enumerable-methods.html">Ruby Enumerable Magic</a>
+    </li>
+    <li><a href="t5-ruby-classes.html">Intro to Ruby Classes</a></li></ul>
+  <p></p>
+    <ul>Cultural
+      <li><a href="c1-chefs-kitchen.html">DBC warm up </a></li>
+      <li><a href="c3-thinking-style.html">Abstract Sequential</a></li>
+      <li><a href="c4-tech-issues.html">Internet & Bias</a></li>
+      <li><a href="c5-feedback.html">Pairing & Feedbacks</a></li>
+    </ul>
+
+  </div>
+
+<div id="rightmainbody" style="height:2600px">
+
+<h4><center> </center></h4>
+ <h4><em>1/23/2015</em>
+      <p> A brief introduction to Ruby classes </p></h4>
+
+<p>A class is a core concept in Object-Oriented programming. It is, simply put, a template of the methods and variables associated with a particular object. The objects within a class will all inherit a common structure, shaped by the methods and variables inside that class.</p>
+
+<p>To create a new object, we use the format:</p>
+
+<p>object_name = Class.new.</p>
+
+<p>#here, we are building a Dessert class</p>
+
+<div class="examplz">
+Class Dessert
+
+<br>def bake(fav_dessert1, fav_dessert2)
+<br>puts 'Your #{fav_dessert1} and your #{fav_dessert2} are baking..'
+<br>end
+<br>def serve
+<br>puts 'Your deserts are ready! Enjoy!'
+<br>end
+<br>end
+<p></p>
+cakes = Dessert.new
+
+</div>
+
+<p>The objects within a class are called the instance of a class. In the example above, "cakes" is the instance of the "Dessert" class and is generated as a variable. As I stated above, it will inherit all of the properties (methods and variables) inside the Dessert class. Only, the properties will be molded in terms of the parameters specified by, and proper to the object.</p>
+
+<p>When we call the Dessert#bake method, we need to add 2 parameters as followed: </p>
+
+<div class="examplz">
+cakes.bake("pinneaple cake", "chocolate cake")
+<br>=>
+<br><em>Your pinneaple cake and your chocolate cake are baking...</em>
+</div>
+
+<p>Notice how the cook method cannot be called alone, or as Dessert.bake?
+  <br>As cakes is now an instance of the Dessert methods, all of its properties will be called with 'cakes'. </p>
+
+<p>So far, so good. You now know the basics of a class.</p>
+
+<p>Now, if we wanted our parameters to be called across the methods inside the class, so that, so that instead of:
+<br> "Your deserts are ready! Enjoy!"
+<br>the Dessert#serve method could put:
+<br>"Your pinneaple cake and your chocolate cake are ready! Enjoy!".
+<br>One way would be to add 2 parameters for the Dessert#serve, like we did for Dessert#bake. But that would be daunting, as I would need to add them for everytime I call a new method.</p>
+
+<p>Instead, classes offer a practical way of doing so via the Dessert#initialize method:</p>
+
+<div class="examplz">
+Class Dessert
+<br>def initialize(fav_dessert1, fav_dessert2)
+<br>@fav_dessert1 = fav_dessert1
+<br>@fav_dessert2 = fav_dessert2
+<br>end
+<br>def bake
+<br>puts 'Your #{@fav_dessert1} and your #{@fav_dessert2} are baking..'
+<br>end
+<br>def serve
+<br>puts 'Your #{@fav_dessert1} and your #{@fav_dessert2} are ready! Enjoy!'
+<br>end
+<br>end
+<p></p>
+cakes = Dessert.new("pinneaple cake", "chocolate cake")
+<p></p>
+<br>cakes.bake
+<br>=>
+<br><em>Your pinneaple cake and your chocolate cake are baking...</em>
+<br>cakes.serve
+<br>=>
+<br><em>Your pinneaple cake and your chocolate cake are ready! Enjoy!</em>
+</div>
+
+<p>There's a few changes to look at.
+<br> First, I added an #Dessert#intialize method. This method refers to whatever goes on inside the class and across methods. What makes this method peculiar is that contrary to others, you cannot name it anything else but "initialize" for it to do its job.</p>
+
+<p>Second, did you notice how I transferred the 2 parameters into the initialize method? As such, we directly assign them to our object when we create the object.</p>
+
+<p>Third, there is that strange @ symbol. The @fav_dessert1 and @fav_dessert2 inside the initialize method are called instance variables. They are variables that can be used across any methods in that class, and even outside of the class. Practical, ey?
+<br> We can call them any name, but we generally give them the same name as our parameters because we assign them to these values.</p>
+
+<p>Besides instance variable, we can also assign conditional statements or loops to the initialize method.</p>
+
+<div class="examplz">
+Class Dessert
+<br>def initialize(fav_dessert1, fav_dessert2)
+<br>  if fav_dessert1 == "licorice brownie" || fav_dessert2 == ""licorice brownie"
+<br>    puts "Eww..are you crazy? Pick something else, sicko.
+<br>  end"
+<br>@fav_dessert1 = fav_dessert1
+<br>@fav_dessert2 = fav_dessert2
+<br>end
+<br>def bake
+<br>puts 'Your #{@fav_dessert1} and your #{@fav_dessert2} are baking..'
+<br>end
+<br>def serve
+<br>puts 'Your #{@fav_dessert1} and your #{@fav_dessert2} are ready! Enjoy!'
+<br>end
+<br>end
+
+<p></p>
+
+cakes = Dessert.new("licorice brownie", "strawberry shortcake")
+<br>=>
+<br><em>Eww..are you crazy? Pick something else, sicko.</em>
+<p></p>
+cakes = Dessert.new("pinneaple_cake", "strawberry shortcake")
+<p></p>
+<br>cakes.bake
+<br>=>
+<br><em>Your pinneaple cake and your strawberry shortcake are baking...</em>
+<br>cakes.serve
+<br>=>
+<br><em>Your pinneaple cake and your strawberry shortcake are ready! Enjoy!</em>
+</div>
+
+
+<p>That's all for now, folks. I hope I made the concept of Classes in Ruby clearer to you now!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+
+<div id="footer">This website is protected under the <a href="../LICENSE">MIT license</div>
+
+<div id="social">
+ <a href= "https://github.com/samguergen">
+    <img src="http://reno.gov/home/showimage?id=6126" height="42px" width="42px" id="github">
+  </a>
+  <a href= "https://twitter.com/jusdepommes25">
+    <img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/twitter_circle_black-512.png" height="38px" width="40px" id="twitter"aaa>
+  </a>
+  <a href="https://www.linkedin.com/pub/samanthaguergenenov">
+    <img src="http://www.iconsdb.com/icons/download/black/linkedin-4-512.png" height="37px" width="40px" id="linkedin">
+  </a>
+  <a href="http://instagram.com/croissantgirlsam">
+    <img src="http://www.ymsketch.com/instagram-4-256.png" height="42px" width="42px" id="the_gram">
+</div>
+</div>
+
+</div>
+  </body>
+</html>

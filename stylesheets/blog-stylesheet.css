@@ -1,19 +1,23 @@
 #wrapper {
-/*background-color: #F5FFFF;*/
+/*background-color: #FFFFFC;*/
 padding: 20px auto;
-color:  #7C5300;
-font-family: Baskerville;
 font-size: large;
-background-image: url (/Users/samanthaguergenenov/Desktop/DevBootcamp/samguergen.github.io/beachbg.png);
+font-family: Architect;
+background-image: url("../futurist-android-faded.png");
+background-repeat: no-repeat;
+background-size: 100% auto;
+background-attachment: fixed;
+/*background-position: 0px -50px*/
 }
 
 
+/*
 #header, #mainbody, #footer, #leftmainbody, #rightmainbody {
  border: 3px solid #E6E6CA;
  border-radius: 20px;
- background-color:  #E0FFFF;
  margin: 20px auto;
-}
+}*/
+
 
 
 #header {
@@ -22,27 +26,35 @@ background-image: url (/Users/samanthaguergenenov/Desktop/DevBootcamp/samguergen
   width: 100%;
 }
 
-#header, table {
-  width: 100%;
+#navigator {
+color: #FFFFFF;
 }
 
-tr:first-child td {
-  border: 2px solid #E6E6CA;
-  border-radius: 5px;
-  background-color:   #CCFFFF;
+  #navigator ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
 }
 
-tr:first-child td:first-child {
-  border: none;
-  width: 250px;
-  background-color:   #E0FFFF;
-
+#navigator li {
+    float: left;
+    margin-top: 10px;
 }
 
-#header img {
-  width: 200px;
-  border-radius: 100px;
-  border: 2px solid #E6E6CA;
+#navigator a:link, a:visited {
+    display: block;
+    width: 180px;
+    font-weight: bold;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navigator a:hover, a:active {
+    background-color: black;
+    border-radius: 5px;
 }
 
 #mainbody{
@@ -55,24 +67,44 @@ height: 400px;
 
 #leftmainbody {
   float: left;
-  width: 200px;
-border: none;
+width: 200px;
 margin: 10px auto;
 display: inline-block;
 height: 300px;
+border: 3px;
+color: #FFFFFF;
+/*border-left: 1px solid #FFFFFF;
+border-right: 1px solid #FFFFFF;*/
+padding: 20px;
+}
 
+#leftmainbody ul{
+  list-style-type: none;
+  color: black;
+  padding: 3px;
+  margin-left: 15px;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
 
+#leftmainbody ul li{
+font-weight: normal;
+text-transform: capitalize;
+font-size: smaller;
 
 }
 
+
 #rightmainbody {
   float: right;
-  margin: 10px auto;
-  width: 800px;
+  margin-right: 60px;
+  margin-top: 70px;
+  width: 700px;
   text-align: justify;
   display: inline-block;
   height: 300px;
-  border: none;
+
+
 }
 
 #rightmainbody img{
@@ -86,6 +118,13 @@ height: 300px;
   font-size: small;
   clear: both;
   width: 100%;
+}
+
+#social {
+/*  text-align: right;*/
+  margin: 50px;
+  display: inline-block;
+  margin-left: 700px;
 }
 
 .examplz {
