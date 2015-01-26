@@ -1,22 +1,21 @@
 #wrapper {
-/*background-color: #FFFFFC;*/
 padding: 20px auto;
 font-size: large;
-font-family: Architect;
+/*font-family: Architect;*/
+font-family: "Trebuchet MS", Helvetica, sans-serif;
 background-image: url("../futurist-android-faded.png");
 background-repeat: no-repeat;
 background-size: 100% auto;
+background-position: 0px -50px;
 background-attachment: fixed;
-/*background-position: 0px -50px*/
 }
 
 
-/*
 #header, #mainbody, #footer, #leftmainbody, #rightmainbody {
- border: 3px solid #E6E6CA;
- border-radius: 20px;
+/* border: 3px solid #E6E6CA;
+ border-radius: 20px;*/
  margin: 20px auto;
-}*/
+}
 
 
 
@@ -28,17 +27,23 @@ background-attachment: fixed;
 
 #navigator {
 color: #FFFFFF;
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
   #navigator ul {
     list-style-type: none;
     padding: 0;
     overflow: hidden;
+    margin-left:60px;
+    margin-right: 60px;
 }
 
 #navigator li {
     float: left;
-    margin-top: 10px;
+    margin-top: 20px;
+    text-align: center;
+    width:20%;
+    font-size: x-large;
 }
 
 #navigator a:link, a:visited {
@@ -53,8 +58,13 @@ color: #FFFFFF;
 }
 
 #navigator a:hover, a:active {
-    background-color: black;
-    border-radius: 5px;
+    color: black;
+    font-style: bolder;
+}
+
+#name {
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: medium;
 }
 
 #mainbody{
@@ -91,20 +101,27 @@ padding: 20px;
 font-weight: normal;
 text-transform: capitalize;
 font-size: smaller;
+margin: 10px;
 
 }
 
 
 #rightmainbody {
   float: right;
-  margin-right: 60px;
+  margin-right: 90px;
   margin-top: 70px;
   width: 700px;
   text-align: justify;
   display: inline-block;
   height: 300px;
+}
 
-
+#rightmainbody #title{
+  color: #FFFFFF;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: x-large;
+  text-align: right;
+  margin-right: 200px;
 }
 
 #rightmainbody img{
@@ -113,6 +130,7 @@ font-size: smaller;
   margin: 20px;
   width: 60%;
 }
+
 
 #footer {
   font-size: small;
