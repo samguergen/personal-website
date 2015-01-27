@@ -90,7 +90,7 @@ padding: 20px;
 
 #leftmainbody ul{
   list-style-type: none;
-  color: black;
+  color: #FFFFFF;
   padding: 3px;
   margin-left: 15px;
   font-weight: bolder;
@@ -105,6 +105,9 @@ margin: 10px;
 
 }
 
+#leftmainbody ul li a:hover, a:active {
+    color: black;
+}
 
 #rightmainbody {
   float: right;
