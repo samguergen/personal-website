@@ -8,6 +8,7 @@ background-repeat: no-repeat;
 background-size: 100% auto;
 background-position: 0px -50px;
 background-attachment: fixed;
+border-radius: 5px;
 }
 
 
@@ -79,12 +80,10 @@ height: 3000px;
   float: left;
 width: 200px;
 margin: 10px auto;
-display: inline-block;
+/*display: inline-block;*/
 height: 300px;
 border: 3px;
 color: #FFFFFF;
-/*border-left: 1px solid #FFFFFF;
-border-right: 1px solid #FFFFFF;*/
 padding: 20px;
 }
 
@@ -92,9 +91,9 @@ padding: 20px;
   list-style-type: none;
   color: #FFFFFF;
   padding: 3px;
-  margin-left: 15px;
   font-weight: bolder;
   text-transform: capitalize;
+  margin-left:55px;
 }
 
 #leftmainbody ul li{
@@ -109,13 +108,15 @@ margin: 10px;
     color: black;
 }
 
+/*why don't margins work by themselves?*/
 #rightmainbody {
-  float: right;
-  margin-right: 90px;
-  margin-top: 70px;
-  width: 700px;
+  float: left;
+  margin-top: 100px;
+  margin-left: 150px;
+ /* margin: 50px 90px 50px 400px;*/
+  width: 630px;
   text-align: justify;
-  display: inline-block;
+  /*display: inline-block;*/
   height: 300px;
 }
 
@@ -145,7 +146,7 @@ margin: 10px;
 /*  text-align: right;*/
   margin: 50px;
   display: inline-block;
-  margin-left: 700px;
+  margin-left: 800px;
 }
 
 .examplz {
