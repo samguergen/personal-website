@@ -58,6 +58,10 @@ font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     text-transform: uppercase;
 }
 
+#navigator a:link {
+    color: #FFFFFF;
+}
+
 #navigator a:hover, a:active {
     color: black;
     font-style: bolder;
