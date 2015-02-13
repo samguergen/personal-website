@@ -1,0 +1,59 @@
+#header{
+    font-family: Fraktur;
+    font-size: x-large;
+    font-style: bold;
+    background-color: #FFFFCC;
+    padding: 20px;
+    margin: 0px 100px 0px 100px;
+    border-radius: 10px;
+}
+
+
+#mainbody{
+    background-color: #D1FFFF;
+    margin: 20px 100px 20px 100px;
+    border-radius: 10px;
+}
+
+.titles{
+
+    margin-left: 100px;
+    padding: 40px;
+    font-size: large;
+    font-family: Fraktur;
+    text-align: left;
+    position: relative;
+    font-style: italic;
+
+}
+
+ul:not(li) {
+    font-style: bold;
+}
+
+ul li{
+    padding: 5px;
+}
+
+.content{
+    text-align: left;
+
+    font-size: smaller;
+    font-family: Frosty;
+}
+
+img{
+    margin-left: 200px;
+    width: 500px;
+    margin: 100px;
+    border-radius: 10px;
+}
+
+#footer{
+    font-family: Fraktur;
+    clear: both;
+    background-color: #FFFFCC;
+    margin: 0px 100px 0px 100px;
+    padding: 20px;
+    border-radius: 10px;
+}

@@ -1,0 +1,97 @@
+<!doctype html>
+<head>
+<title>Sam's Blog</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/cheatsheet_stylesheet.css">
+</head>
+<body>
+  <div id="header">
+<p>SQL Basics</p>
+<div id="navigator"></div>
+</div>
+
+
+<div id="mainbody">
+
+<div class="titles">Introduction & Basics</div>
+
+<div class="content">
+<ul><b>What is SQL?</b>
+<li>DBMS = database management system</li>
+<li>Give you info between you and your data</li>
+<li>SQL= language to query database</li>
+<li>The point of SQL is to change datasets (not single data, but entire rows or columns)</li>
+</ul>
+
+<ul><b>Structure</b>
+<li>Database is like a table</li>
+<li>Every column:</li>
+<li> stored a piece of data.</li>
+<li>Has unique data type</li>
+<li>Can be formatted to only accept certain data type or structure (like phone)</li>
+  <p>
+<li>Every row stores value for that data;</li>
+<li>Separate instance of the data.</li>
+<li>Such as a contact person.</li>
+</ul>
+
+<ul><b>Constraints</b>
+<li> minimum 1 row per database  </li>
+<li>2 rows can’t contain same info</li>
+<li>column should have only 1 datatype</li>
+<li> for e.g:
+  <br>column should be number only in format 000-000-0000
+<br>only picture can be updated in row, not name
+</ul>
+</div>
+
+
+<div class="titles"> Relational Databases</div>
+<div class="content">
+  <ul><b>What is it?</b>
+<li>Relational database is relations of rows  together</li>
+<li>Order of rows of columns doesn’t matter.</li>
+<li>ID is useful because every instance (row) may have same name, same country, etc.</li>
+<li>You can create new table base on different tables, like enrolment for student and class</li>
+<li>The power of relational database lies in the relationship that can be defined between tables. </li>
+<li>The most crucial aspect in designing a relational database is to identify the relationships among tables: </li>
+</ul>
+</div>
+
+<div class="content">
+<ul><b>One-to-Many Relationship</b>
+  <li> for e.g: 1 car has many seats. But the seats only belong to the car, not to another. </li>
+  <li>Table A has its own key + foreign key from Table B. Table B has its own key (linking to Table A's foreign key). But no foreign key of its own.</li>
+</div>
+<img src="../../phase-0-unit-3/week-8/1-intro-to-databases/imgs/states_region.png"/>
+
+
+<div class="content">
+<ul><b>One-to-One Relationship</b>
+ <li> for e.g: countries and cities</li>
+<li>any given row from Table A can have at most one matching row in Table B.</li>
+<li>child (cities) does not have its own id, because can’t exist without parent- only has id of parent</li>
+</ul>
+</div>
+
+<img src="../../phase-0-unit-3/week-8/2-more-schemas/imgs/one-to-one.png"/>
+
+
+<div class="content">
+<ul><b>Many-to-Many Relationship</b>
+ <li> for e.g: book and authors </li>
+ <li>rows in the first table can map to multiple rows in the second table… and those rows in the second table can also map to multiple (different) rows in the first table.</li>
+ <li>requires join table, with foreign keys (id) of both</li>
+ <li>by convention, join table has name of both (name1_name2) and no id of its own.</li>
+</ul>
+</div>
+<img src="../../phase-0-unit-3/week-8/2-more-schemas/imgs/students_challenges.png"/>
+
+</div>
+
+<div id="footer">
+  <p>Written by Sam and Taylor</p>
+  <p> <a href="blog-home.html">Click here</a> to go back to Blog Home</p>
+</div>
+  </body>
+</html>
