@@ -129,7 +129,8 @@ margin: 10px;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   font-size: x-large;
   text-align: right;
-  margin-right: 200px;
+  margin-right: 260px;
+  margin-top: -20px;
 }
 
 #rightmainbody img{

@@ -76,12 +76,15 @@ height: 400px;
 }
 
 .reach {
-  margin-left: 300px;
+  margin-left: 280px;
   font-style: bold;
-  margin-top: 100px;
   color: #FFFFFF;
   font-family: Architect;
   font-size: 20px;
+}
+
+#email {
+  margin-top: 100px;
 }
 
 #mewrap {

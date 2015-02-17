@@ -1,0 +1,130 @@
+<!doctype html>
+<head>
+<title>Sam's Blog</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+
+</head>
+
+  <body>
+
+<div id="wrapper">
+
+<div id="header">
+<div id="navigator">
+<ul>
+  <li><a href="../index.html">About</a></li>
+  <li><a href="../cv.html">Resume</a></li>
+  <li><a href="../projects.html">Projects</a></li>
+  <li><a href="blog-home.html">Blog</a></li>
+  <li><a href="../contact.html">Contact</a></li>
+</ul>
+
+______________________________________________________
+<br><div id="name">Sam Guergenenov</div>
+</div>
+</div>
+
+
+<div id="mainbody">
+  <div id="leftmainbody">
+<ul><em> Blog Posts</em></ul>
+  <p></p>
+  <ul>Technical
+    <li><a href="t1-git-blog.html">VC, Git and Github</a>
+    </li>
+    <li><a href="t2-css-design.html">HTML & CSS</a></li>
+    <li><a href="t3-arrays-hashes.html">Arrays & Hashes</a></li>
+      <li><a href="t4-enumerable-methods.html">Ruby Enumerable Magic</a>
+    </li>
+    <li><a href="t5-ruby-classes.html">Intro to Ruby Classes</a></li>
+<li><a href="t6-oop-concepts.html">FP vs. OOP</a></li>
+<li><a href="t7-JavaScript.html">Loops: JS vs. Ruby</a></li>
+<li><a href="t8-tech.html">Dynamic vs. Static Typed languages</a></li>
+  </ul>
+  <p></p>
+    <ul>Cultural
+      <li><a href="c1-chefs-kitchen.html">DBC warm up </a></li>
+      <li><a href="c3-thinking-style.html">Abstract Sequential</a></li>
+      <li><a href="c4-tech-issues.html">Internet & Bias</a></li>
+      <li><a href="c5-feedback.html">Pairing & Feedbacks</a></li>
+      <li><a href="c6-stereotype-threat.html">Stereotype Threat</a></li>
+       <li><a href="c7-values.html">Values To Live By</a></li>
+       <li><a href="c8-conflict.html">Situations of Conflict</a></li>
+    </ul>
+
+    <ul>Cheat Sheets
+      <li><a href="cheat-sheet.html">SQL</a></li>
+
+  </div>
+
+<div id="rightmainbody">
+
+<h4><center> </center></h4>
+<h4>
+  <em>01/15/2015</em>
+<p> Dynamic vs. Static Typed Languages</p></h4>
+
+<p> Dynamic Types languages</p>
+
+<p>So far, we have mostly been learning to manipulate Ruby and Javascript, which are both dynamically-typed languages. The main characteristic of dynamically typed, or dynamic languages, is that most of the checks are done at run-time, as opposed to compile-time. Another characteristic of dynamic languages is that they these languages associate types with values, and not with variables.
+(ex?).
+<br>Besides <b>Javascript</b> and <b>Ruby</b>, examples of dynamic languages include <b>Python, Objective-C, Lisp</b> and <b>Groovy</b>.</p>
+
+<p>Dynamic languages tend to be very popular among programmers, mostly because they are more easy to read and code. They have less syntactic rules requires, such as punctuation, or class declarations, and consequently they require less lines of coding and less meticulousness.
+<br>For example, in Ruby, printing the sentence "Hello World" can be done in only one line: </p>
+
+<img src="imgs/helloworldruby.png"/>
+
+<p>In Java, writing even the smallest sentence takes 3 lines. For example, adding "public class" is required, even if its purpose is not very relevant in this situation. </p>
+
+public class
+...
+
+<p>Dynamic languages can be more flexible than static languages, because they operate functions based on run-time data. This allows for a more sophisticated checking, because it incorporates dynamic information, in addition to the information provided at run-time.<p>
+
+<p>In addition, though dynamic information can be sometimes more limited, because they only allow to test in a particular instance of a situation, unit testing can be incorporated to ensure that the program tests for a wider range of errors. </p>
+
+<p>However, dynamic languages can be less practical than static languages. Errors can be harder to locate, because the program finds bugs at run-time sometimes long after the error is actually. In static languages, which I will explain in more detail in a moment, the error is identified right away, as soon as the data is passed in the wrong place.</p>
+
+<p>The run-time checks of dynamic languages will, of course, verify that the data is syntactically correct, but will be less efficient in verifying the logic of the source code than a compile-time check.</p>
+
+<p>Another negative aspect of a run-time check is that it only checks for information at the time of the execution of the program. This means that the check will only spot errors for an instance of the program that is run, instead of spotting any potential errors from any possible execution, like a compile-time check would. This makes it therefore more limited and generally a bit less reliable. </p>
+
+
+<img src="imgs/runcompile.png"/>
+
+<p> In the example above (written in Ruby), Ruby will consider this a valid statement and will return the string "2 digit number", even though the else statement is syntactically inaccurate (a bracket is missing). In Java, the program will immediately return an error even though the else statement isn't executed.</p>
+
+&nbsp
+
+<p> Static Types languages</p>
+
+<p>Static typed languages are called conservative languages, because they do not test for operations at run-time, but only at compile-time. <br>Examples of such languages incude C, C++, C#, Java and Haskel.
+<br>A primary reason why most coders use static-typed languages, instead of using "easier-to-reader-and-code" dynamic languages, is because static languages will not only check for a condition or argument at the time of execution only, but will check for all possible instance of the program.
+
+<p>As we see in the example above, a compile-time check in Java will return a syntax error for this program, even though the else statement isn't evaluated. This is practical because is guarantees that the program will run no matter what, and provides a 'preventative debugging'. </p>
+<p>With dynamic languages, run-time checks can give a false sense of safety to the coder, because even if the code will run with all of the arguments provided at the time of execution, there could be a situation that the coder forgot to test for, which ends up returning an error when the code eventually goes live.</p>
+
+<p>Consequently, the 'preventative debugging' offered by compile-time checking not only allows many errors to be caught early in the development cycle, but also saves times to the coder by eliminating the need for running every possible instance of the program.</p>
+
+
+<p> -Sam </p>
+
+</div>
+</div>
+
+
+
+</div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
