@@ -63,7 +63,7 @@ ______________________________________________________
 
 <h4><center> </center></h4>
 <h4>
-  <em>01/08/2015</em>
+  <div id="date">01/08/2015</div>
 <p> Ruby, Arrays & Hashes.</p></h4>
 
 <p>This week, I immersed myself in Ruby and built some simple programs using the concepts we learned about control flow, loops, iterators, arrays and hashes. Control flow comes quite naturally for me, since it derives from logic, my favorite class as an undergraduate. The if else statements and while loops form the core of computer programming: a two-fold (or binary) mechanism that gives the computer its intelligence. I call it the core, because most computer programs' foundations are built on binary thinking style, which we can more or less interpret as:
@@ -81,51 +81,52 @@ ______________________________________________________
 
 <p>#builds my array</p>
 
-<p><div class="examplz">
-favorites_movies = ["The Matrix", "Avatar", "The Lion King", "The Notebook"]</div></p>
-
+<!-- <p><div class="examplz">
+favorites_movies = ["The Matrix", "Avatar", "The Lion King", "The Notebook"]</div></p> -->
+<img src="imgs/array1.png"/>
 
 <p>#builds my announcer method, with a placeholder as parameter</p>
 
-<p><div class="examplz">
+<!-- <p><div class="examplz">
 def announcer(movies)
 <br>puts "Hi, and thank you for attending the Annual Sam Movie Night!"
 <br>puts "Tonight, we will be presenting: " + movies.join(", ") + "!"
 <br>end
-</div></p>
+</div></p> -->
+<img src="imgs/array1.png"/>
 
-<p>#calls my method, with my favorite_movies array as parameter</p>
+<!-- <p>#calls my method, with my favorite_movies array as parameter</p>
 <p><div class="examplz">
-announcer(favorite_movies)
-<br>=>
+announcer(favorite_movies) -->
+<img src="imgs/array3.png"/>
+<div class="examplz">
+<p>=>
 <em><br>Hi, and thank you for attending the Annual Sam Movie Night!
 
 <br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King, The Notebook!
-</em></div>
-</p>
+</em></p></div>
 
-&nbsp
+
 <p>Without arrays, I have to add each movie as an input, which is considerably more tedious:</p>
 
-<p><div class="examplz">
-announcer("The Matrix, Avatar, The Lion King, The Notebook")
-<br>=>
+<!-- <p><div class="examplz">
+announcer("The Matrix, Avatar, The Lion King, The Notebook") -->
+<img src="imgs/array4.png"/>
+<p>=>
 <em>
 <br>Hi, and thank you for attending the Annual Sam Movie Night!
 <br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King, The Notebook!
 </em></div></p>
 
-&nbsp
-
 <p>Alternatively, if I wish to only announce one or a few movies, I can print them out using the array name and their position in the array: </p>
 
-<p><div class="examplz">
-announcer(favorite_movies[0:2])
-<br>=>
+<img src="imgs/array5.png"/>
+<div class="examplz">
+<p>=>
 <em><br>Hi, and thank you for attending the Annual Sam Movie Night!
 
 <br>Tonight, we will be presenting: The Matrix, Avatar, The Lion King!
-</em></div> </p>
+</em></p></div>
 
 &nbsp
 <p>Hashes</p>
@@ -133,36 +134,28 @@ announcer(favorite_movies[0:2])
 <p> Similar to an array, a hash stores a list of data into one variable. However, the difference is that instead of individual data, with a default index, a hash stores a list of key-value pairs.
 <br>Using my previous example, if I were to convert my array into a hash, I would instead place a value for each movie name. For example, my opinion of the movie:</p>
 
-<p>
-<div class="examplz">
-favorites_movies = ["The Matrix": "deep, obscure, and thought-provoking",
-<br>"Avatar": "futurist and dreamy",
-<br>"The Lion King": "childhood classic",
-<br>"The Notebook": "chick flick"]
-</div></p>
+<img src="imgs/hash1.png"/>
 
 &nbsp
 
 <p>Consequently, I were to call the an element according to its position in the hash, I would first need to conver the hash into an array, because hashes have no default index. In doing so, the key-value pair would be returned, not the individual value:</p>
 
-<p><div class="examplz">
-favorite_movies.to_a[1]
-<br>=>
-<br><em>Avatar: futurist and dreamy</em></div></p>
+<img src="imgs/hash2.png"/>
+<div class="examplz">
+<p>=>
+<br><em>Avatar: futurist and dreamy</em></p></div>
 
 <p>If I were to return the value instead (my opinion of a movie), I would call it by its key, not by its default index. </p>
 
-<p><div class="examplz">
-favorite_movies["Avatar"]
-</div>
+<img src="imgs/hash3.png"/>
 
 <p>(or sorting by index, but specifying amout the values only)
 </p>
 
-<p><div class="examplz">
-favorites_movies.values[1]
-<br>=>
-<br><em>futurist and dreamy</em></div></p>
+<img src="imgs/hash4.png"/>
+<div class="examplz">
+<p>=>
+<br><em>futurist and dreamy</em></p></div>
 
 <p>Thus, a key can be considered the index of its associated value.</p>
 

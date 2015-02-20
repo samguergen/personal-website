@@ -63,7 +63,7 @@ ______________________________________________________
 
 <h4><center> </center></h4>
 <h4>
-  <em>01/14/2015</em>
+  <div id="date">01/14/2015</div>
 <p> Enumerables in Ruby</p></h4>
 
 <p>This week, I learned about enumerable modules. These are very useful and typical of Ruby for iterating through an array or hash.</p>
@@ -72,15 +72,13 @@ ______________________________________________________
 
 <p>Enumerables are pre-packages methods that provide a tailored way of iterating. Their logic is implicit and most often characterized by their name. For example, the .sort method iterates through an array, and in doing so it will sort the elements alphabetically or numerically from lowest to higher number:</p>
 
-<p><div class="examplz">
-students= ["Sandra","Kevin","Sam","Pat","Catherine","Amandine","Lucia"]
-</div></p>
+<img src="imgs/enum1.png"/>
 
 <p>#will sort the names alphabetically</p>
 
-<p><div class="examplz">
-students.sort
-<br> =>
+<img src="imgs/enum2.png"/>
+<div class="examplz">
+<p> =>
 <br><em> ["Amandine", "Catherine", "Kevin", "Lucia", "Pat", "Sam", "Sandra"]</em></div></p>
 
  <p>This provides a great advantage for Rubyists: it saves them lots of lines of code!
@@ -97,15 +95,11 @@ students.sort
 
 <p>For example:</p>
 
-<p><div class="examplz">
-students= ["Sandra","Kevin","Sam","Pat","Catherine","Amandine","Lucia"]
-</div></p>
-
 <p>#will sort names by number of characters in name</p>
 
-<p><div class="examplz">
-students.sort_by {|name| name.length}
-<br>=>
+<img src="imgs/enum3.png"/>
+<div class="examplz">
+<p>=>
 <br><em>["Lucia", "Pat", "Sandra", "Catherine", "Sam", "Amandine", "Kevin"]
 </em></div></p>
 
@@ -117,12 +111,9 @@ students.sort_by {|name| name.length}
 
 <p>For example:</p>
 
+<img src="imgs/enum4.png"/>
 <div class="examplz">
-<p>students= ["Sandra","Kevin","Sam","Pat","Catherine","Amandine","Lucia"] </p>
-
-<p>
-  students.group_by{|name| name.length}
-<br>=>
+<p>=>
  <br><em>{5=>["Kevin", "Lucia"], 6=>["Sandra"], 8=>["Amandine"], 3=>["Sam", "Pat"], 9=>["Catherine"]}</em>
 </p>
 </div>

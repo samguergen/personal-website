@@ -62,7 +62,7 @@ ______________________________________________________
 <div id="rightmainbody" style="height:2600px">
 
 <h4><center> </center></h4>
- <h4><em>1/23/2015</em>
+ <h4><div id="date">1/23/2015</div>
       <p> A brief introduction to Ruby classes </p></h4>
 
 <p>A class is a core concept in Object-Oriented programming. It is, simply put, a template of the methods and variables associated with a particular object. The objects within a class will all inherit a common structure, shaped by the methods and variables inside that class.</p>
@@ -73,29 +73,18 @@ ______________________________________________________
 
 <p>#here, we are building a Dessert class</p>
 
-<div class="examplz">
-Class Dessert
+<img src="imgs/class1.png"/>
 
-<br>def bake(fav_dessert1, fav_dessert2)
-<br>puts 'Your #{fav_dessert1} and your #{fav_dessert2} are baking..'
-<br>end
-<br>def serve
-<br>puts 'Your deserts are ready! Enjoy!'
-<br>end
-<br>end
-<p></p>
-cakes = Dessert.new
-
-</div>
 
 <p>The objects within a class are called the instance of a class. In the example above, "cakes" is the instance of the "Dessert" class and is generated as a variable. As I stated above, it will inherit all of the properties (methods and variables) inside the Dessert class. Only, the properties will be molded in terms of the parameters specified by, and proper to the object.</p>
 
 <p>When we call the Dessert#bake method, we need to add 2 parameters as followed: </p>
 
+<img src="imgs/class2.png"/>
 <div class="examplz">
-cakes.bake("pinneaple cake", "chocolate cake")
-<br>=>
+<p>=>
 <br><em>Your pinneaple cake and your chocolate cake are baking...</em>
+</p>
 </div>
 
 <p>Notice how the cook method cannot be called alone, or as Dessert.bake?
@@ -111,29 +100,13 @@ cakes.bake("pinneaple cake", "chocolate cake")
 
 <p>Instead, classes offer a practical way of doing so via the Dessert#initialize method:</p>
 
+<img src="imgs/class3.png"/>
 <div class="examplz">
-Class Dessert
-<br>def initialize(fav_dessert1, fav_dessert2)
-<br>@fav_dessert1 = fav_dessert1
-<br>@fav_dessert2 = fav_dessert2
-<br>end
-<br>def bake
-<br>puts 'Your #{@fav_dessert1} and your #{@fav_dessert2} are baking..'
-<br>end
-<br>def serve
-<br>puts 'Your #{@fav_dessert1} and your #{@fav_dessert2} are ready! Enjoy!'
-<br>end
-<br>end
-<p></p>
-cakes = Dessert.new("pinneaple cake", "chocolate cake")
-<p></p>
-<br>cakes.bake
-<br>=>
+<p>=>
 <br><em>Your pinneaple cake and your chocolate cake are baking...</em>
-<br>cakes.serve
-<br>=>
-<br><em>Your pinneaple cake and your chocolate cake are ready! Enjoy!</em>
-</div>
+<br><em>Your pinneaple cake and your chocolate cake are ready! Enjoy!
+</em>
+</p></div>
 
 <p>There's a few changes to look at.
 <br> First, I added an #Dessert#intialize method. This method refers to whatever goes on inside the class and across methods. What makes this method peculiar is that contrary to others, you cannot name it anything else but "initialize" for it to do its job.</p>
@@ -145,37 +118,11 @@ cakes = Dessert.new("pinneaple cake", "chocolate cake")
 
 <p>Besides instance variable, we can also assign conditional statements or loops to the initialize method.</p>
 
+<img src="imgs/class4.png"/>
 <div class="examplz">
-Class Dessert
-<br>def initialize(fav_dessert1, fav_dessert2)
-<br>  if fav_dessert1 == "licorice brownie" || fav_dessert2 == ""licorice brownie"
-<br>    puts "Eww..are you crazy? Pick something else, sicko.
-<br>  end"
-<br>@fav_dessert1 = fav_dessert1
-<br>@fav_dessert2 = fav_dessert2
-<br>end
-<br>def bake
-<br>puts 'Your #{@fav_dessert1} and your #{@fav_dessert2} are baking..'
-<br>end
-<br>def serve
-<br>puts 'Your #{@fav_dessert1} and your #{@fav_dessert2} are ready! Enjoy!'
-<br>end
-<br>end
-
-<p></p>
-
-cakes = Dessert.new("licorice brownie", "strawberry shortcake")
-<br>=>
-<br><em>Eww..are you crazy? Pick something else, sicko.</em>
-<p></p>
-cakes = Dessert.new("pinneaple_cake", "strawberry shortcake")
-<p></p>
-<br>cakes.bake
-<br>=>
-<br><em>Your pinneaple cake and your strawberry shortcake are baking...</em>
-<br>cakes.serve
-<br>=>
-<br><em>Your pinneaple cake and your strawberry shortcake are ready! Enjoy!</em>
+<p>=>
+<br><em>Your pinneaple cake and your strawberry shortcake are baking...
+<br>Your pinneaple cake and your strawberry shortcake are ready! Enjoy!</em>
 </div>
 
 
