@@ -97,8 +97,9 @@ height: 400px;
 }
 
 #mewrap img{
+  margin-top: 20px;
   border-radius: 5px;
-  height: 230px;
+  height: 205px;
   float: left;
   border: 0.5px solid #FFFFFF;
 

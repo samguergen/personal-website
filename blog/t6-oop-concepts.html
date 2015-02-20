@@ -69,7 +69,7 @@ ______________________________________________________
 &nbsp
 
 <div class="quote">
-<em><p>"Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.</p>
+<p>"Object-oriented languages are good when you have a fixed set of operations on things, and as your code evolves, you primarily add new things. This can be accomplished by adding new classes which implement existing methods, and the existing classes are left alone.</p>
 
 <p>Functional languages are good when you have a fixed set of things, and as your code evolves, you primarily add new operations on existing things. This can be accomplished by adding new functions which compute with existing data types, and the existing functions are left alone."</em>
   <br>-Norman Ramsey</p></div>
@@ -77,8 +77,8 @@ ______________________________________________________
 &nbsp
 
 
-<p>Function programming is a programming paradigm that involves manipulating data through mathematical functions, like .sort, .inject or .each in Ruby. The programmer can then encapsulate (or 'package') them into methods that accept a set of data, and use it to modify or spit back more data..
-<br>Since the method - and functions inside of it - accept only 'static' data and depend on the nature of this data to properly work, the functional programmer is mostly concerned with how the data is constructed.</p>
+<p>Functional programming is a programming paradigm that involves manipulating data through mathematical functions, like .sort, .inject or .each in Ruby. The programmer can encapsulate (or 'package') them into methods that accept a set of data, and use them to modify or spit back more data..
+<br>Since the methods - and functions inside of them - accept only 'static' data and depend on the nature of this data to properly work, the functional programmer is mostly concerned with how the data is constructed.</p>
 
 
 <p>An advantage of using functional programming is precisely the fact that it is static, and all changes to the program are local. This makes the code much more readable and easier to understand, with less chances of confusion caused by a hidden states or implicit modification of the data.
@@ -87,7 +87,7 @@ ______________________________________________________
 
 
 
-<p>On the other hand, functional programming applies to a smaller scope, maing its use more limited. With methods being the largest type of encapsulation, any attempt to building more complex or intelligent code involves building a large quantity of code, with unavoidable repetitions. As such, the code becomes more difficult to read, and tracking any changes or errors to troubleshoot can be an exhausting task.</p>
+<p>On the other hand, functional programming applies to a smaller scope, meaning that its use is more limited. With methods being the largest type of encapsulation, any attempt to building more complex or intelligent code involves building a large quantity of code, with unavoidable repetitions. As such, the code becomes more difficult to read, and tracking any changes or errors to troubleshoot can be an exhausting task.</p>
 <p>Furthermore, since methods accept static data only, it can be difficult to build very complex algorithm using real-world examples. That is because the world is mutable and ever-changing, so building programs that can be of significant in the real-worlds should accept data that is mutable too. </p>
 
 
@@ -98,7 +98,7 @@ ______________________________________________________
 
  <p>In contrast, Object-Oriented Programming treats objects, not functions, as a basic tool of manipulation. Objects such as classes are the largest types of encapsulation, packing variables and methods together in structure. As a result, the OOP programmer will not only be concerned with the construction of the data, but also with how the state of the evolving data.</p>
 
- <em>note: for a more detailed description and examples of classes, refer to my <a href="t5-ruby-classes.html">previous</a> technical post introducing classes.</em>
+ <div class="quote">note: for a more detailed description and examples of classes, refer to my <a href="t5-ruby-classes.html">previous</a> technical post introducing classes.</div>
 
 
 <p>By encapsulating sets of method and variable into objects and later calling or inheriting these objects, one advantage of using OOP is that is avoids repetition and saves many lines of code. Consequently, this saves programmers time that can be used to think creatively and build more complex coding.
