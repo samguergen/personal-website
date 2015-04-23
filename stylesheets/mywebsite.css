@@ -5,7 +5,7 @@ h6, p, ul, li, footer, small, a {
   border: 0;
   padding: 0;
   margin: 0;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Lora', sans-serif;
   font-weight: inherit;
   font-size: inherit;
   text-decoration: none;
@@ -17,7 +17,7 @@ ul {
 }
 
 body {
-  font-size: 14px;
+  font-size: 15px;
   margin: 80px auto;
   padding: 0 10px;
   width: 750px;
@@ -37,7 +37,7 @@ main {
 
 h1 {
   font-weight: 300;
-  font-size: 48px;
+  font-size: 42px;
   letter-spacing: 4px;
   margin-bottom: 20px;
 }
@@ -57,7 +57,7 @@ nav > div {
 }
 
 nav > div:hover {
-  color: #00cc99;
+  color: #FF9999;
   cursor: pointer;
   font-weight: 400;
 }
