@@ -17,11 +17,13 @@ ul {
 }
 
 body {
-  font-size: 15px;
+  font-size: 16px;
+  line-height: 150%;
   margin: 80px auto;
   padding: 0 10px;
   width: 750px;
   overflow: scroll;
+  background-color: #FFF4F4;
 }
 
 /*CLEARFIX*/
@@ -72,7 +74,8 @@ section {
 }
 
 .about img {
-  width: 600px;
+  width: 500px;
+  border-radius: 5px;
 }
 
 .bw {
@@ -80,7 +83,8 @@ section {
 }
 
 .about p {
-  margin: 15px 0;
+  margin: 20px 0;
+  width: 500px;
 }
 
 h2 {
@@ -203,7 +207,7 @@ article.project-info {
 }
 
 a.gitrepo {
-  background-image: url("https://s3.amazonaws.com/karabernert.com/github32.png");
+  background-image: url();
   width: 32px;
   overflow: hidden;
   height: 0px;
@@ -278,10 +282,10 @@ small {
 }
 
 #eiffel {
-  width: 40px;
+  width: 15px;
   position: absolute;
   opacity: .5;
-  bottom: -15px;
+  bottom: 0px;
   right: 10px;
 }
 /*
