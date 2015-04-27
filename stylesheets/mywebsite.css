@@ -1,0 +1,265 @@
+/* RESET */
+body, main, img, section,
+nav, h1, h2, h3, h4, h5,
+h6, p, ul, li, footer, small, a {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  font-family: 'Lora', sans-serif;
+  font-weight: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-size: 16px;
+  line-height: 150%;
+  margin: 80px auto;
+  padding: 0 10px;
+  width: 750px;
+  overflow: scroll;
+  background-color: #FFF4F4;
+}
+
+/*CLEARFIX*/
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*STYLE*/
+main {
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 42px;
+  letter-spacing: 4px;
+  margin-left: 116px;
+  margin-bottom: 50px;
+}
+
+nav {
+  font-size: 20px;
+  line-height: 40px;
+  margin-left: 0px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  display: block;
+  float: left;
+}
+
+nav > div {
+  display: block;
+  margin: 15px 0;
+  width: 120px;
+}
+
+nav > div:hover {
+  color: #FF9999;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+section {
+  display: block;
+  float: right;
+  width: 500px;
+  min-height: 400px;
+  padding: 20px 10px;
+
+}
+
+.about img {
+  width: 500px;
+  border-radius: 5px;
+}
+
+.bw {
+  -webkit-filter: grayscale(100%);
+}
+
+.about p {
+  margin: 20px 0;
+  width: 500px;
+}
+
+h2 {
+  font-weight: 400;
+  border-bottom: 1px solid #000;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+h3 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+h4 {
+  font-style: italic;
+}
+
+.resume div, .projects div {
+  float: right;
+}
+
+.resume p, .resume li, .projects p {
+  font-size: 13px;
+  margin: 3px 0;
+}
+
+.resume ul {
+  width: 500px;
+}
+
+.resume li {
+  list-style-type: circle;
+  list-style-position: inside;
+  padding-left: 5px;
+}
+
+h5 {
+  font-style: italic;
+  font-weight: 400;
+  margin-top: 15px;
+}
+
+ul.image-banner {
+  width: 500px;
+  margin-bottom: 20px;
+}
+
+ul.image-banner li{
+  width: 100px;
+  display:block;
+  float: left;
+  padding-top: 100px;
+  height: 0;
+  overflow: hidden;
+}
+
+
+.projects li {
+  margin-bottom: 15px;
+  padding: 5px;
+}
+
+.projects li:hover h2 {
+  color: #FF9999;
+  font-weight: 600;
+}
+
+.projects img {
+  width: 100px;
+  float: left;
+  display: block;
+  background: #eee;
+}
+
+.projects h2 {
+  margin-top: 0;
+}
+
+article.project-info {
+  width: 470px;
+  float: left;
+  margin-left: 15px;
+  display: block;
+  position: relative;
+}
+
+a.gitrepo {
+  background-image: url("http://s5.postimg.org/4jn8v5637/github32.png");
+  width: 32px;
+  overflow: hidden;
+  height: 0px;
+  padding-top: 32px;
+  display: block;
+  z-index: 100;
+}
+
+div.octocat-mask {
+  background: #fff;
+  opacity: 1;
+  z-index: 99;
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 400px;
+  bottom: 45px;
+  border-radius: 16px;
+}
+
+div.octocat-mask:hover {
+  background: #FF9999;
+}
+
+a.gitrepo:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+a.demo {
+  display: none;
+}
+
+.projects li {
+  position: relative;
+}
+
+.projects li:hover a.demo {
+  color: #fff;
+  background: #00cc99;
+  font-weight: 600;
+  font-size: 12px;
+  z-index: 101;
+  display: block;
+  width: 36px;
+  padding: 12px 2px;
+  height: 16px;
+  position: absolute;
+  border-radius: 20px;
+  left: 60px;
+  bottom: 10px;
+  opacity: .9;
+}
+a.demo:hover {
+  cursor: pointer;
+}
+
+footer {
+  height: 20px;
+  width: 750px;
+  display: block;
+  margin: 100px 0;
+}
+
+small {
+  float: right;
+  display: block;
+  position: relative;
+  color: #888;
+  padding-right: 60px;
+  margin-top: 50px;
+}
+
+#eiffel {
+  width: 15px;
+  position: absolute;
+  opacity: .5;
+  bottom: 0px;
+  right: 10px;
+}
+/*
+  for jquery
+*/
+section.hide {
+  display: none;
+}
