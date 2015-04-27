@@ -9,7 +9,6 @@ h6, p, ul, li, footer, small, a {
   font-weight: inherit;
   font-size: inherit;
   text-decoration: none;
-/*      border: 1px solid blue;*/
 }
 
 ul {
@@ -41,11 +40,14 @@ h1 {
   font-weight: 300;
   font-size: 42px;
   letter-spacing: 4px;
-  margin-bottom: 20px;
+  margin-left: 116px;
+  margin-bottom: 50px;
 }
 
 nav {
   font-size: 20px;
+  line-height: 40px;
+  margin-left: 0px;
   letter-spacing: 2px;
   font-weight: 300;
   display: block;
@@ -67,7 +69,7 @@ nav > div:hover {
 section {
   display: block;
   float: right;
-  width: 600px;
+  width: 500px;
   min-height: 400px;
   padding: 20px 10px;
 
@@ -113,7 +115,7 @@ h4 {
 }
 
 .resume ul {
-  width: 600px;
+  width: 500px;
 }
 
 .resume li {
@@ -129,7 +131,7 @@ h5 {
 }
 
 ul.image-banner {
-  width: 600px;
+  width: 500px;
   margin-bottom: 20px;
 }
 
@@ -142,12 +144,6 @@ ul.image-banner li{
   overflow: hidden;
 }
 
-#backbone {
-  background-image: url('https://s3.amazonaws.com/karabernert.com/backbone.png');
-  background-size: 560px;
-  background-repeat: no-repeat;
-  margin-left: 10px;
-}
 
 #ruby {
   background-image: url('https://s3.amazonaws.com/karabernert.com/ruby.png');
@@ -183,7 +179,7 @@ ul.image-banner li{
 }
 
 .projects li:hover h2 {
-  color: #00cc99;
+  color: #FF9999;
   font-weight: 600;
 }
 
@@ -207,7 +203,7 @@ article.project-info {
 }
 
 a.gitrepo {
-  background-image: url();
+  background-image: url("http://s5.postimg.org/4jn8v5637/github32.png");
   width: 32px;
   overflow: hidden;
   height: 0px;
@@ -230,7 +226,7 @@ div.octocat-mask {
 }
 
 div.octocat-mask:hover {
-  background: #00cc99;
+  background: #FF9999;
 }
 
 a.gitrepo:hover {
@@ -279,6 +275,7 @@ small {
   position: relative;
   color: #888;
   padding-right: 60px;
+  margin-top: 50px;
 }
 
 #eiffel {
