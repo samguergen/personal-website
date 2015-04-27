@@ -145,34 +145,6 @@ ul.image-banner li{
 }
 
 
-#ruby {
-  background-image: url('https://s3.amazonaws.com/karabernert.com/ruby.png');
-  background-size: 100px;
-  background-repeat: no-repeat;
-
-}
-
-#html5 {
-  background-image: url('https://s3.amazonaws.com/karabernert.com/html5.png');
-  background-size: 100px;
-  background-repeat: no-repeat;
- margin-left: 10px;
-
-}
-#jquery {
-  background-image: url('https://s3.amazonaws.com/karabernert.com/jquery.png');
-  background-size: 540px;
-  background-repeat: no-repeat;
-  margin-left: 10px;
-}
-
-#pgsql {
-  background-image: url('https://s3.amazonaws.com/karabernert.com/postgresql.png');
-  background-size: 100px;
-  background-repeat: no-repeat;
-  margin-left: 15px;
-}
-
 .projects li {
   margin-bottom: 15px;
   padding: 5px;
