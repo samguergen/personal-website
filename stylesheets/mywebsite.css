@@ -234,6 +234,10 @@ a.demo:hover {
   cursor: pointer;
 }
 
+.contact a, .contact a:visited {
+    color: black;
+}
+
 footer {
   height: 20px;
   width: 750px;
