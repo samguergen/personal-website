@@ -217,7 +217,12 @@ div.octocat-mask {
   border-radius: 16px;
 }
 
-div.bitbucket-mask {
+.tax-group article {
+  margin-bottom: 30px;
+}
+
+.tax-group img {
+  margin-top: -10px;
   background: #fff;
   opacity: 1;
   z-index: 99;
@@ -225,17 +230,25 @@ div.bitbucket-mask {
   width: 32px;
   height: 32px;
   position: absolute;
-  left: 400px;
+  left: 405px;
   bottom: 45px;
   border-radius: 16px;
 }
 
-.tax-group img {
-  margin-top: -10px;
-  width: 40px;
+.mortgage-group img {
+  background: #fff;
+  opacity: 1;
+  z-index: 99;
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 405px;
+  bottom: 70px;
+  border-radius: 16px;
 }
 
-div.octocat-mask:hover, div.bitbucket-mask:hover {
+div.octocat-mask:hover {
   background: #FF9999;
 }
 
