@@ -194,6 +194,16 @@ a.gitrepo {
   z-index: 100;
 }
 
+a.bitrepo {
+  background-image: url("imgs/bitbucket-logo.png");
+  width: 32px;
+  overflow: hidden;
+  height: 0px;
+  padding-top: 32px;
+  display: block;
+  z-index: 100;
+}
+
 div.octocat-mask {
   background: #fff;
   opacity: 1;
@@ -211,7 +221,7 @@ div.octocat-mask:hover {
   background: #FF9999;
 }
 
-a.gitrepo:hover {
+a.gitrepo:hover, a.bitrepo:hover {
   opacity: .6;
   cursor: pointer;
 }
