@@ -195,13 +195,13 @@ a.gitrepo {
 }
 
 a.bitrepo {
-  background-image: url("imgs/bitbucket-logo.png");
-  width: 32px;
+  /*background-image: url(../imgs/bitbucket-logo.png);*/
+/*  width: 32px;
   overflow: hidden;
   height: 0px;
   padding-top: 32px;
   display: block;
-  z-index: 100;
+  z-index: 100;*/
 }
 
 div.octocat-mask {
@@ -217,7 +217,25 @@ div.octocat-mask {
   border-radius: 16px;
 }
 
-div.octocat-mask:hover {
+div.bitbucket-mask {
+  background: #fff;
+  opacity: 1;
+  z-index: 99;
+  display: block;
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  left: 400px;
+  bottom: 45px;
+  border-radius: 16px;
+}
+
+.tax-group img {
+  margin-top: -10px;
+  width: 40px;
+}
+
+div.octocat-mask:hover, div.bitbucket-mask:hover {
   background: #FF9999;
 }
 
