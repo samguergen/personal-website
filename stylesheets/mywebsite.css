@@ -109,6 +109,11 @@ h4 {
   float: right;
 }
 
+.resume h4 {
+  font-size: 13px;
+  line-height: 90%
+}
+
 .resume p, .resume li, .projects p {
   font-size: 10px;
   margin: 3px 0;
