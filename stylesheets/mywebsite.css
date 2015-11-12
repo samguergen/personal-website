@@ -76,7 +76,7 @@ section {
 }
 
 .about img {
-  width: 400px;
+  width: 350px;
   border-radius: 5px;
 }
 
@@ -86,7 +86,9 @@ section {
 
 .about p {
   margin: 20px 0;
-  width: 500px;
+  width: 450px;
+  text-align: justify;
+  line-height: 160%;
 }
 
 h2 {
