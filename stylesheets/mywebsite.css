@@ -25,6 +25,9 @@ body {
   background-color: #FFF4F4;
 }
 
+.group {
+  font-size: 14px;
+}
 /*CLEARFIX*/
 .group:after {
   content: "";
