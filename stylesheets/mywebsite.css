@@ -194,6 +194,15 @@ article.project-info {
   position: relative;
 }
 
+article.tennisbud {
+  margin-bottom: 15px;
+}
+
+article.tennisbud h2.group a:hover {
+  color: #FF9999;
+  font-weight: 600;
+}
+
 a.gitrepo {
   background-image: url("http://s5.postimg.org/4jn8v5637/github32.png");
   width: 32px;
