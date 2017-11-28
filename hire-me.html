@@ -27,18 +27,18 @@
     <section class="about">
 <!-- src="http://s5.postimg.org/asaeu7zfb/ok2_2.jpg" -->
 
-      <img class="me" src="http://s5.postimg.org/didb86azb/Samantha_Headshot_1.jpg" >
-      <p>   I'm a web developer living in NYC, originally from France and with a background in Philosophy, Statistical Research, and Information Technology. On my free time I practice archery, watch futurist films, and compose music on guitar and piano. </p>
+      <img class="me" src="./imgs/sam-official.jpg" >
+      <p>   I'm a web developer living in NYC, originally from France and with a background in Philosophy, Economics, Statistical Research, and Information Technology. On my free time I practice archery, watch futurist films, and compose music on guitar and piano. </p>
 
     </section>
 
     <section class="resume hide">
 
       <h2>LANGUAGES AND TECHNOLOGIES</h2>
-
-      <br><b>Backend</b>:Ruby on Rails, PHP, mySQL, PostGresSQL, SQLite, Symfony2, Sinatra, Python, MEAN, LAMP
-      <br><b>Frontend</b>: AngularJS, Javascript, HTML5, CSS3, SASS, jQuery, Ajax, Gulp, LocalStorage, IndexedDB, JS Dev Tools.
-      <br><b>Testing Frameworks:</b>   RSpec, Jasmine
+      
+      <br><b>Frontend</b>: AngularJS, Javascript, HTML5, CSS3, SASS, jQuery, Ajax, VueJS, Gulp, LocalStorage, IndexedDB, JS Dev Tools.
+      <br><b>Backend</b>:Ruby on Rails, PHP, mySQL, PostGresSQL, SQLite, Symfony2, Sinatra, Python, MEAN, LAMP, Java
+      <br><b>Testing Frameworks:</b>   RSpec, Jasmine, Protractor
       <br><b>Databases:</b> SQL(PostgresSQL, SQLite, MySQL), Doctrine ORM, MongoDB
       <br><b>Version Control:</b> GIT, Github, Bitbucket
       <br><b>Methodologies:</b>  Object-Oriented Programming and Design, Test-Driven (TDD) and Behavior-Driven Development (BDD), RESTful, LEAN, Agile, Responsive Web Design, Single-Page Applications, Asynchronous and Synchronous Applications.
@@ -48,35 +48,66 @@
 
 
       <h2>EXPERIENCE</h2>
+      	                    
+      <h3 class="group">Cirrus Systems – LED display content management software
+        <div>Portland, ME</div></h3>
+      <h4>Front End Web Developer, May 2017 - Nov 2017 </h4>
+      <ul>
+        <li>Built front-end features, fixed bugs and optimized the codebase in AngularjS for Cirrus’ s front-end application, which controls in real-time what users display on their LED screens. </li>
+        <li>Used jQuery for advanced DOM manipulation (selecting elements from the page and adding user behavior) that could not easily be done with AngularJS.</li>
+        <li>Used HTML/CSS for UI prototyping and design, specifically for the User Profile and Analytics portion of the site.</li>
+        <li>Used VueJS to build reusable elements, such as a data and graph filtering tools for the admin application, used by tech support to find more information about our LED screen users.</li>
+        <li>Used Jasmine and Protractor to built user and end-to-end testing tools in (behavior-driven development).</li>
+        <li>Used Stripe JS to develop the application’s paywall and bank information page.</li>
+        <li>Examples of features built are: a draggable graph for controlling LED display brightness levels throughout the day, modal-style tutorial of the website, ‘custom’ slides creation process to directly select, preview and add an image/video to the newly-created slide, a weather icon that updates in real-time, and the integration of a face-tracking and car-counting functionality to the software.</li>
+        <li>Language used: AngularJS, Javascript, jQuery, VueJS, HTML, CSS/SASS, Jasmine, Protractor, Stripe JS.</li>
+      </ul>
+      
+      <h3 class="group">General Assembly – Education
+        <div>Boston, MA</div></h3>
+      <h4>Instructional Associate Developer (contract), Feb 2017 - May 2017 </h4>
+      <ul>
+        <li>Led courses in computer science fundamentals and full-stack web development for classes of 20+ students in a 3-month long web development bootcamp.</li>
+        <li>Classes range from CS algorithms and data structures, to intro to Javascript and advanced Ruby on Rails.</li>
+        <li>Language used: Ruby, Ruby on Rails, Javascript, jQuery, HTML, CSS/SASS, SQL, PostGreSQL.</li>
+      </ul>
 
     <h3 class="group">JPMorgan Chase – Financial
       <div>New York, NY</div></h3>
-    <h4>Advanced Application Developer, June 2016- present </h4>
+    <h4>Application Developer (contract), June 2016 - Sept 2016 </h4>
     <ul>
-      <li>developed and maintained the UI for an internal application displaying trader order data with advanced filtering.</li>
-      <li>Language used: AngularJS, JS, jQuery, HTML/CSS, SASS.</li>
+      <li>Developed and maintained the UI for an internal application displaying financial data about JPMC trader transactions.</li>
+      <li>Consumed APIs in Ajax and AngularJS to fetch and retrieve this data (in JSON format) in real-time.</li>
+      <li>Used AngularJS and HTML & CSS to display the data visually.</li>
+      <li>Improved interface responsiveness in HTML & CSS.</li>
+      <li>Built UI components for a better display of data, such as dropdowns with advanced filtering and sorting options using jQuery and AngularJS.</li>
+      <li>Language used: AngularJS, Javascript, jQuery, HTML, CSS/SASS.</li>
     </ul>
 
-    <h3 class="group">Remedy Partners – healthcare <div>New York, NY</div></h3>
-    <h4>Junior Front-End Developer, Dec 2015-March 2016 </h4>
+    <h3 class="group">Remedy Partners – Healthcare <div>New York, NY</div></h3>
+    <h4>Front-End Developer (contract), Dec 2015 - March 2016 </h4>
     <ul>
-      <li> improved interface responsiveness and built UI components based on wireframes from design team.</li>
-      <li> create prototype for an asynchronous RESTful prototype in AngularJS to save, update and configure templates. </li>
-      <li>Language used: AngularJS, JavaScript, HTML5, CSS3, SASS, LocalStorage, IndexedDB, LocalForage API</li>
+      <li> The first 2 months were focused on fixing visual bugs and improving responsiveness using HTML & CSS.</li>
+      <li> After 2 months, my role shifted to the building of UI components in AngularJS and Javascript based on design wireframes.</li>
+      <li>Used AngularJS to create a RESTful prototype to add, delete, edit and configure JSON-based data about user in-patient information.</li>
+      <li>Researched ways to migrate the existing app in Angular 2.0 and ReactJS. These languages were used to build very basic components for the purpose of testing and comparing them with AngularJS 1.5.</li>
+      <li>Both the main application and the prototype were backend-less, meaning that I used AngularJS’s HttpBackend and LocalStorage to temporarily store data on the browser, until backend development was ready.</li>
+      <li>Language used: AngularJS, JavaScript, HTML5, CSS3/ SASS, LocalStorage, IndexedDB, LocalForage API, ReactJS</li>
     </ul>
 
-      <h3 class="group">Present Value – financial education blog <div>New York, NY</div></h3>
-      <h4>Software Engineer (Full-Stack), July-Sept 2015 </h4>
+      <h3 class="group">Present Value – Financial education startup 
+        <div>New York, NY</div></h3>
+      <h4>Software Engineer, July 2015 -Sept 2015 </h4>
       <ul>
-        <li> Built front and backend features for the main app. </li>
-
-        <li>Some front-end improvements include: adding options for multiple bank accounts using AngularJS. </li>
-        <li>Built independent financial tools as add-ons to the Present Value website. These display a breakdown of your month-to-month tax and mortgage payments over time. Dynamic graphs provide a visual insight. </li>
-        <li>Language used: AngularJS, Ruby on Rails, ActivRecord/SQL, CoffeeScript, Slim </li>
-        <li>Firm restructured. </li>
+        <li>Used AngularJS to built frontend features and UI elements for the main application. Some front-end improvements include: adding options for multiple bank accounts using AngularJS and display information about the user and his purchase history.</li>
+        <li>Used Ruby on Rails and SQL to structure and persist the data. An example would be to store when a user chooses to  ‘deactivate’ his account.</li>
+        <li>Used AngularjS and CoffeeScript to build tax and mortgage calculators as add-ons to the main application. These display a breakdown of your month-to-month tax and mortgage payments over time. Dynamic graphs provide a visual insight.</li>
+        <li>Used D3.js, a third-party tool to graph user tax and mortgage information.</li>
+        <li>Language used: AngularJS, Ruby on Rails, ActivRecord/SQL, CoffeeScript, Slim, D3.js </li>
       </ul>
 
-      <h3 class="group">MaxMind, Inc – IP geolocation databases and web services<div>Waltham, MA</div></h3>
+      <h3 class="group">MaxMind, Inc – IP geolocation databases and web services
+        <div>Waltham, MA</div></h3>
       <h4>Tech Support, Nov 2012-Sept 2014</h4>
       <ul>
         <li> Provided online technical support and sales assistance to foreign-speaking companies. </li>
