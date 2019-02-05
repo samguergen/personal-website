@@ -204,8 +204,8 @@ article.tennisbud h2.group a:hover {
 }
 
 a.gitrepo {
-  background-image: url("http://s5.postimg.org/4jn8v5637/github32.png");
   width: 32px;
+  /* background-image: url("imgs/github-logo.png"); */
   overflow: hidden;
   height: 0px;
   padding-top: 32px;
@@ -213,27 +213,18 @@ a.gitrepo {
   z-index: 100;
 }
 
-a.bitrepo {
-  /*background-image: url(../imgs/bitbucket-logo.png);*/
-/*  width: 32px;
-  overflow: hidden;
-  height: 0px;
-  padding-top: 32px;
-  display: block;
-  z-index: 100;*/
-}
-
-div.octocat-mask {
+.github-group img {
   background: #fff;
   opacity: 1;
   z-index: 99;
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   position: absolute;
-  left: 400px;
+  left: 392px;
   bottom: 45px;
   border-radius: 16px;
+}
 }
 
 .tax-group article, .mortgage-group article {
@@ -341,4 +332,14 @@ small {
 */
 section.hide {
   display: none;
+}
+
+.widgets h6 {
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: underline;
+  margin-bottom: 25px;
+}
+.widgets h6 a {
+  color:black;
 }
