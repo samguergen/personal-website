@@ -339,7 +339,15 @@ section.hide {
   font-size: 16px;
   text-decoration: underline;
   margin-bottom: 25px;
+  margin-top: 40px;
 }
 .widgets h6 a {
   color:black;
+}
+.widgets .screenshot-wrap {
+  display:flex;
+}
+.widgets .screenshots {
+  width: 350px;
+  height: 200px;
 }
